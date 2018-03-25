@@ -5,8 +5,8 @@ Online VBScript Repo :)
 
 - [x] Create repo and edit Readme
 - [x] Create simple HTML to check environment
-- [ ] Create Basic UI that IE10 supports
-- [ ] Enter the questions
+- [x] Create Basic UI that IE10 supports
+- [x] Enter the questions
 - [ ] Integrate the answers
 - [ ] Tweak it a little
 

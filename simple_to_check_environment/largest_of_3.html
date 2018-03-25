@@ -1,0 +1,64 @@
+
+<html>
+  <title>Find the largest number </title>
+
+  <head>
+      <h1>
+          The Largest Number
+      </h1>
+  </head>
+
+  <body> 
+
+    <script Language="vbscript">
+
+       Option Explicit
+       Sub SubmitButton_onClick
+          Dim largestNum                   
+          If IsNumeric(num1.value) and IsNumeric(num2.value) _
+                                   and IsNumeric(num3.value) Then
+             MsgBox "You have entered: " & num1.value & " " & num2.value & " " _
+                    & num3.value, vbOKOnly, "Entered Values"
+
+             largestNum = num1.value
+             If CDbl(num2.value) > CDbl(largestNum) Then
+                largestNum = num2.value
+             End If
+
+             If CDbl(num3.value) > CDbl(largestNum) Then
+                largestNum = num3.value
+             End If
+
+             MsgBox "The largest number entered is: "  & largestNum, vbOKOnly, _
+                    "Largest Number"
+          Else
+             MsgBox "You must enter three numbers! Try Again", vbOKOnly, _
+                    "Invalid Input"
+          End If
+       End Sub
+    </script>
+
+    <br> <br>
+
+    <table>               
+       <td>   First Number: </td>
+       <td> <Input Type="Text" Name="num1" Value="" /> </td>
+    </tr>
+
+    <tr>
+       <td> Second Number: </td>
+       <td> <Input Type="Text" Name="num2" Value="" /> </td>
+    </tr>
+
+    <tr>
+       <td> Third Number: </td>
+       <td> <Input Type="Text" Name="num3" Value="" /> </td>
+    </tr>
+    </table>
+    <br>
+
+    <Input Type="Button" Name="SubmitButton" Value="Submit" /> 
+
+  </body>
+</html>
+

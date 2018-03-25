@@ -4,6 +4,7 @@ Online VBScript Repo :)
 ## :heavy_check_mark: Task list  
 
 - [x] Create repo and edit Readme
+- [x] Create simple HTML to check environment
 - [ ] Create Basic UI that IE10 supports
 - [ ] Enter the questions
 - [ ] Integrate the answers

@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=9">
+	<title>LIBA14 VB scripting</title>
+
+
+	<link rel="stylesheet" type="text/css" href="main.css" />
+	<link rel="stylesheet" type="text/css" href="style.css" />
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+	
+
+	<script type="text/javascript" src="main.js"></script>
+	
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+			  sectionsColor: ['#1abc9c', '#2ecc71', '#3498db', '#9b59b6', '#ecf0f1', '#f1c40f', '#e67e22', '#e74c3c', '#95a5a6', '#8e44ad', '#2980b9', '#27ae60', '#16a085', '#f39c12', '#d35400', '#c0392b', '#95a5a6'],
+			  anchors: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17'],
+			  menu: '#menu',
+			  continuousVertical: true,
+			  continuousHorizontal: true,
+			  
+			  slidesNavigation: true
+			});
+		});
+	</script>
+
+</head>
+<body>
+
+
+
+
+<ul id="menu" style="text-align: center;">
+	<li data-menuanchor="1" class="active"><a href="#1">Main</a></li>
+	<li data-menuanchor="2"><a href="#2">1</a></li>
+	<li data-menuanchor="3"><a href="#3">2</a></li>
+	<li data-menuanchor="4"><a href="#4">3</a></li>
+	<li data-menuanchor="5"><a href="#5">4</a></li>
+	<li data-menuanchor="6"><a href="#6">5</a></li>
+	<li data-menuanchor="7"><a href="#7">6</a></li>
+	<li data-menuanchor="8"><a href="#8">7</a></li>
+	<li data-menuanchor="9"><a href="#9">8</a></li>
+	<li data-menuanchor="10"><a href="#10">9</a></li>
+	<li data-menuanchor="11"><a href="#11">10</a></li>
+	<li data-menuanchor="12"><a href="#12">11</a></li>
+	<li data-menuanchor="13"><a href="#13">12</a></li>
+	<li data-menuanchor="14"><a href="#14">13</a></li>
+	<li data-menuanchor="15"><a href="#15">14</a></li>
+	<li data-menuanchor="16"><a href="#16">15</a></li>
+	<li data-menuanchor="17"><a href="#17">16</a></li>
+</ul>
+
+<div id="fullpage">
+	<div class="section " id="section0">
+		<h1>LIBA 14</h1>
+		<p>VB Scripting :)</p>
+	</div>
+	<div class="section" id="section1">
+		<div class="slide" id="slide1" data-anchor="slide1">
+			<div class="intro">
+				<h1>Team #1</h1>
+				<p>
+					<span class="highlight">Team members: </span><br/>
+					Nivedha Ganeshan
+					<br/>
+					Christus Colman Vincent Paul Arokiadass
+					<br/> 
+				</p>
+			</div>
+		</div>
+
+	    <div class="slide" id="slide2" data-anchor="slide2">
+			<h1>Question #6</h1>
+			<p class="question">
+				Create an MS Access file/ Excel file manually and connect it as database using VBS. Also read the contents from the database with any condition mentioned and add them in to another excel sheet (Use ADODB)
+			</p>
+		</div>
+
+		<div class="slide" id="slide3" data-anchor="slide3">
+			<script type="text/vbscript" language="vbscript">
+				Function button6()
+					MsgBox("Q6")
+					temp = MsgBox("Please enter the absolute path of the .xlsx file",0,"Instruction")
+					filePath = InputBox("Enter the file path","Enter Value")
+		 			msgbox filePath
+		 		End Function	
+			</script>
+			<table>
+				<tr>
+					<td><input type="button" name="submit" value="Q6" class="button" onclick="button6()"></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<div class="section" id="section2">
+		<div class="slide" id="slide1" data-anchor="slide1">
+			<div class="intro">
+				<h1>Team #2</h1>
+				<p>
+					<span class="highlight">Team members: </span><br/>
+					Maheswari Mohana Sundaram
+					<br/>
+					Mohan Rajasekaran
+				</p>
+			</div>
+		</div>
+
+	    <div class="slide" id="slide2" data-anchor="slide2">
+			<h1>Question #13</h1>
+			<p class="question">
+				In an excel have employee names and countries next to each other. The countries will be repeated for multiple names. In a new excel, add the count of employees in each country and also enter the name of employees in a single row.
+			</p>
+		</div>
+
+		<div class="slide" id="slide3" data-anchor="slide3">
+			<h1>insert script/html here :)</h1>
+		</div>
+	</div>
+	<div class="section" id="section3">
+		<div class="slide" id="slide1" data-anchor="slide1">
+			<div class="intro">
+				<h1>Team #3</h1>
+				<p>
+					<span class="highlight">Team members: </span><br/>
+					Thamilarasan Palani
+					<br/>
+					Vishal Chacko
+				</p>
+			</div>
+		</div>
+
+	    <div class="slide" id="slide2" data-anchor="slide2">
+			<h1>Question #2</h1>
+			<p class="question">
+				Using VBS, create an excel file; Search for the folder name that will be provided by user. Read all the sub folders and change the name of the worksheets as subfolder names. Then read the file names within the subfolder and input all the details in the respective sheets.
+			</p>
+		</div>
+
+		<div class="slide" id="slide3" data-anchor="slide3">
+			<script type="text/vbscript" language="vbscript">
+				Function button2()
+					MsgBox("Q2")
+					temp = MsgBox("Please enter the absolute path of the .xlsx file",0,"Instruction")
+					filePath = InputBox("Enter the file path","Enter Value")
+		 			msgbox filePath
+		 		End Function	
+			</script>
+			<table>
+				<tr>
+					<td><input type="button" name="submit" value="Q2" class="button" onclick="button2()"></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<div class="section" id="section4">
+		<div class="slide" id="slide1" data-anchor="slide1">
+			<div class="intro">
+				<h1>Team #4</h1>
+				<p>
+					<span class="highlight">Team members: </span><br/>
+					Kaarthikaa Manimaran
+					<br/>
+					Srinivasan Subramaniam
+				</p>
+			</div>
+		</div>
+
+	    <div class="slide" id="slide2" data-anchor="slide2">
+			<h1>Question #9</h1>
+			<p class="question">
+				Using VBS, read all the files/ folders from a drive and segregate according to the starting letter of the file/ folder. EG: If the file starts with A, create a folder called A and add the file in a subfolder called File_names and if there are any subfolders, add them after creating a subfolder called Folder_Names. At the end with a msgbox, give an output with the count of files and folders in each folder
+			</p>
+		</div>
+
+		<div class="slide" id="slide3" data-anchor="slide3">
+			<h1>insert script/html here :)</h1>
+		</div>
+	</div>
+	<div class="section" id="section5">
+		<div class="slide" id="slide1" data-anchor="slide1">
+			<div class="intro">
+				<h1>Team #5</h1>
+				<p>
+					<span class="highlight">Team members: </span><br/>
+					Mary Steffin Avila Rayen
+					<br/>
+					Joseph Rajesh Joseph Antony Raj
+				</p>
+			</div>
+		</div>
+
+	    <div class="slide" id="slide2" data-anchor="slide2">
+			<h1>Question #11</h1>
+			<p class="question">
+				Using VBS, open an excel file and read the contents (sentence) of the first column. Split using space and enter them in different columns – same row. Find the length of each word without using length function and append to the word.
+			</p>
+		</div>
+
+		<div class="slide" id="slide3" data-anchor="slide3">
+			<script type="text/vbscript" language="vbscript">
+				Function button11()
+					MsgBox("Q11")
+					temp = MsgBox("Please enter the absolute path of the .xlsx file",0,"Instruction")
+					filePath = InputBox("Enter the file path","Enter Value")
+		 			msgbox filePath
+		 		End Function	
+			</script>
+			<table>
+				<tr>
+					<td><input type="button" name="submit" value="Q11" class="button" onclick="button11()"></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<div class="section" id="section6">
+		<div class="slide" id="slide1" data-anchor="slide1">
+			<div class="intro">
+				<h1>Team #6</h1>
+				<p>
+					<span class="highlight">Team members: </span><br/>
+					Bala Subramaniam Arunachalam
+					<br/>
+					Balajivenkateswaran Sundarajan
+				</p>
+			</div>
+		</div>
+
+	    <div class="slide" id="slide2" data-anchor="slide2">
+			<h1>Question #3</h1>
+			<p class="question">
+				Using VBS, take a screenshot of each of the worksheets in Excel and paste in the same worksheet. Rename the sheets as screenshot1, screenshot2 and so on.
+			</p>
+		</div>
+
+		<div class="slide" id="slide3" data-anchor="slide3">
+			<h1>insert script/html here :)</h1>
+		</div>
+	</div>
+	<div class="section" id="section7">
+		<div class="slide" id="slide1" data-anchor="slide1">
+			<div class="intro">
+				<h1>Team #7</h1>
+				<p>
+					<span class="highlight">Team members: </span><br/>
+					Mohamed Aejaz Mohamed Arifullam
+					<br/>
+					Sameera Sareen Mohamed Ibrahim
+				</p>
+			</div>
+		</div>
+
+	    <div class="slide" id="slide2" data-anchor="slide2">
+			<h1>Question #15</h1>
+			<p class="question">
+				Have a folder with all jpg files. Each of the jpg files will have to have the name like Testcase1- screenshot1, Testcase1 – Screenshot2, Testcase2 – Screenshot1 and so on. Using vbs, create an excel file and add all the screenshots (jpg files) to each of the corresponding worksheets. EG: Testcase1- screenshot1, Testcase1 – Screenshot2 images must be present in Testcase1 sheet and Testcase2 – Screenshot1 in Testcase2 worksheet.
+			</p>
+		</div>
+
+		<div class="slide" id="slide3" data-anchor="slide3">
+			<h1>insert script/html here :)</h1>
+		</div>
+	</div>
+	<div class="section" id="section8">
+		<div class="slide" id="slide1" data-anchor="slide1">
+			<div class="intro">
+				<h1>Team #8</h1>
+				<p>
+					<span class="highlight">Team members: </span><br/>
+					Venkatesh Parameswaran
+					<br/>
+					Karthik Subramanian
+				</p>
+			</div>
+		</div>
+
+	    <div class="slide" id="slide2" data-anchor="slide2">
+			<h1>Question #12</h1>
+			<p class="question">
+				Using VBS open a notepad with the data. Find the datatype of each word. Create an Excel and have the columns as data type (EG: Numberic, text etc.). Under each of the column, add the words that belong to the corresponding data type.
+			</p>
+		</div>
+
+		<div class="slide" id="slide3" data-anchor="slide3">
+			<script type="text/vbscript" language="vbscript">
+				Function button12()
+					MsgBox("Q12")
+					temp = MsgBox("Please enter the absolute path of the .xlsx file",0,"Instruction")
+					filePath = InputBox("Enter the file path","Enter Value")
+		 			msgbox filePath
+		 		End Function	
+			</script>
+			<table>
+				<tr>
+					<td><input type="button" name="submit" value="Q12" class="button" onclick="button12()"></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<div class="section" id="section9">
+		<div class="slide" id="slide1" data-anchor="slide1">
+			<div class="intro">
+				<h1>Team #9</h1>
+				<p>
+					<span class="highlight">Team members: </span><br/>
+					Sharika Sasikumar
+					<br/>
+					Aravind Sagar Sellapandian
+				</p>
+			</div>
+		</div>
+
+	    <div class="slide" id="slide2" data-anchor="slide2">
+			<h1>Question #8</h1>
+			<p class="question">
+				Have an excel file with number filled in 1 sheet. The numbers will be filled by the user at the time of execution. Also enter the numbers in 2nd sheet (again by the user). Enter numbers in 3rd sheet (as added value). Using VBS, in the 4th sheet (create a sheet if not already created), compare the added values in 3rd sheet with the actual values. If these are the same, mention it as Pass (mark the cell as Green colour) else mention as Fail and mark in Red Colour.
+			</p>
+		</div>
+
+		<div class="slide" id="slide3" data-anchor="slide3">
+			<script type="text/vbscript" language="vbscript">
+				Function button8()
+					MsgBox("Q8")
+					temp = MsgBox("Please enter the absolute path of the .xlsx file",0,"Instruction")
+					filePath = InputBox("Enter the file path","Enter Value")
+		 			msgbox filePath
+		 		End Function	
+			</script>
+			<table>
+				<tr>
+					<td><input type="button" name="submit" value="Q8" class="button" onclick="button8()"></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<div class="section" id="section10">
+		<div class="slide" id="slide1" data-anchor="slide1">
+			<div class="intro">
+				<h1>Team #10</h1>
+				<p>
+					<span class="highlight">Team members: </span><br/>
+					Vignesh Kumar Sundararaj
+					<br/>
+					Boopalan Natarajan
+				</p>
+			</div>
+		</div>
+
+	    <div class="slide" id="slide2" data-anchor="slide2">
+			<h1>Question #16</h1>
+			<p class="question">
+				Open an existing excel file with the details of employees which has name, dob, address, salary, city, Employee ID. Also have a conditions worksheet with the following validations:
+				<div id="boxList">
+					<ul>
+						<li>Name – Free text with a maximum of 60 characters</li>
+						<li>Dob – All the date related conditions</li>
+						<li>Address – Free text but has at least 4 lines of code</li>
+						<li>City – Must be one in a list present in another sheet</li>
+						<li>Employee ID – Must start with a character followed by numbers of 5 digits</li>
+					</ul>
+				</div></p>
+				<p class="question">
+				Using VBS, apply all these conditions and mention whether each of the value is a pass or fail.
+			</p>
+		</div>
+
+		<div class="slide" id="slide3" data-anchor="slide3">
+			<script type="text/vbscript" language="vbscript">
+				Function button16()
+					MsgBox("Q16")
+					temp = MsgBox("Please enter the absolute path of the .xlsx file",0,"Instruction")
+					filePath = InputBox("Enter the file path","Enter Value")
+		 			msgbox filePath
+		 		End Function	
+			</script>
+			<table>
+				<tr>
+					<td><input type="button" name="submit" value="Q16" class="button" onclick="button16()"></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<div class="section" id="section11">
+		<div class="slide" id="slide1" data-anchor="slide1">
+			<div class="intro">
+				<h1>Team #11</h1>
+				<p>
+					<span class="highlight">Team members: </span><br/>
+					Sadhana Sundar
+					<br/>
+					Sairaj Raju
+				</p>
+			</div>
+		</div>
+
+	    <div class="slide" id="slide2" data-anchor="slide2">
+			<h1>Question #10</h1>
+			<p class="question">
+				Using VBS, In an excel file, arrange all the data in ascending order if the user inputs Ascending in the input box else if the user enters Desc, order in Descending order. The user also will select with which column it has to be sorted.
+			</p>
+		</div>
+
+		<div class="slide" id="slide3" data-anchor="slide3">
+			<script type="text/vbscript" language="vbscript">
+				Function button10()
+					MsgBox("Q10")
+					temp = MsgBox("Please enter the absolute path of the .xlsx file",0,"Instruction")
+					filePath = InputBox("Enter the file path","Enter Value")
+		 			msgbox filePath
+		 		End Function	
+			</script>
+			<table>
+				<tr>
+					<td><input type="button" name="submit" value="Q10" class="button" onclick="button10()"></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<div class="section" id="section12">
+		<div class="slide" id="slide1" data-anchor="slide1">
+			<div class="intro">
+				<h1>Team #12</h1>
+				<p>
+					<span class="highlight">Team members: </span><br/>
+					Jayadevi Durairajulu
+					<br/>
+					Jagadish Kumar Muthalur Chandrasekar
+				</p>
+			</div>
+		</div>
+
+	    <div class="slide" id="slide2" data-anchor="slide2">
+			<h1>Question #4</h1>
+			<p class="question">
+				Open a txt file with the following contents:
+				<div id="boxList">
+					<ul>
+						<li>Account Number: XXXXXXX</li>
+						<li>Customer Name: ABC</li>
+						<li>Customer ID: 324234234</li>
+					</ul>
+				</div></p>
+				<p class="question">
+				Using VBS, read all the details and convert the text in to Excel file with the column names – Account Number, Customer Name and Customer ID. This has to work with any txt file which follows the same pattern.
+			</p>
+		</div>
+
+		<div class="slide" id="slide3" data-anchor="slide3">
+			<script type="text/vbscript" language="vbscript">
+				Function button4()
+					MsgBox("Q4")
+					temp = MsgBox("Please enter the absolute path of the .xlsx file",0,"Instruction")
+					filePath = InputBox("Enter the file path","Enter Value")
+		 			msgbox filePath
+		 		End Function	
+			</script>
+			<table>
+				<tr>
+					<td><input type="button" name="submit" value="Q4" class="button" onclick="button4()"></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<div class="section" id="section13">
+		<div class="slide" id="slide1" data-anchor="slide1">
+			<div class="intro">
+				<h1>Team #13</h1>
+				<p>
+					<span class="highlight">Team members: </span><br/>
+					Ashlin Jenefer Christopher
+					<br/>
+					Meenatchi Ramesh
+				</p>
+			</div>
+		</div>
+
+	    <div class="slide" id="slide2" data-anchor="slide2">
+			<h1>Question #7</h1>
+			<p class="question">
+				Have 3 sheets in an excel file. First sheet has the first name of few employees. Second sheet has the Last name of all employees. Third sheet has DOB of all the employees. Using VBS, create another excel file and input the following details. First name (from first sheet) Last name (from second sheet) is of the age (using DOB from third sheet)
+			</p>
+		</div>
+
+		<div class="slide" id="slide3" data-anchor="slide3">
+			<script type="text/vbscript" language="vbscript">
+				Function button7()
+					MsgBox("Q7")
+					temp = MsgBox("Please enter the absolute path of the .xlsx file",0,"Instruction")
+					filePath = InputBox("Enter the file path","Enter Value")
+		 			msgbox filePath
+		 		End Function	
+			</script>
+			<table>
+				<tr>
+					<td><input type="button" name="submit" value="Q7" class="button" onclick="button7()"></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<div class="section" id="section14">
+		<div class="slide" id="slide1" data-anchor="slide1">
+			<div class="intro">
+				<h1>Team #14</h1>
+				<p>
+					<span class="highlight">Team members: </span><br/>
+					Munish Kumar Karthick Muni
+					<br/>
+					Kumara Raja Subramani
+				</p>
+			</div>
+		</div>
+
+	    <div class="slide" id="slide2" data-anchor="slide2">
+			<h1>Question #5</h1>
+			<p class="question">
+				Using VBS, read an XML file and parse it in to Excel file – Column names as XML tags and the corresponding values under each column name
+			</p>
+		</div>
+
+		<div class="slide" id="slide3" data-anchor="slide3">
+			<script type="text/vbscript" language="vbscript">
+				Function button5()
+					MsgBox("Q5")
+					temp = MsgBox("Please enter the absolute path of the .xlsx file",0,"Instruction")
+					filePath = InputBox("Enter the file path","Enter Value")
+		 			msgbox filePath
+		 		End Function	
+			</script>
+			<table>
+				<tr>
+					<td><input type="button" name="submit" value="Q5" class="button" onclick="button5()"></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<div class="section" id="section15">
+		<div class="slide" id="slide1" data-anchor="slide1">
+			<div class="intro">
+				<h1>Team #15</h1>
+				<p>
+					<span class="highlight">Team members: </span><br/>
+					Swathi Manoharan
+					<br/>
+					Nivedha Ramesh
+				</p>
+			</div>
+		</div>
+
+	    <div class="slide" id="slide2" data-anchor="slide2">
+			<h1>Question #1</h1>
+			<p class="question">
+				Using VBS, create a .txt file and write the following contents:<br/>
+				<div id="boxList">
+					<ul >
+						<li>Automation</li>
+						<li>of</li>
+						<li>text</li>
+						<li>file</li>
+						<li>using</li>
+						<li>VBS</li>
+					</ul>
+				</div>
+			</p>
+			<p class="question">
+				Then read the contents from it and write to a new excel file – save it and close
+			</p>
+		</div>
+
+		<div class="slide" id="slide3" data-anchor="slide3">
+			<script type="text/vbscript" language="vbscript">
+				Function button1()
+					MsgBox("Q1")
+					temp = MsgBox("Please enter the absolute path of the .xlsx file",0,"Instruction")
+					filePath = InputBox("Enter the file path","Enter Value")
+		 			msgbox filePath
+		 		End Function	
+			</script>
+			<table>
+				<tr>
+					<td><input type="button" name="submit" value="Q1" class="button" onclick="button1()"></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<div class="section" id="section16">
+		<div class="slide" id="slide1" data-anchor="slide1">
+			<div class="intro">
+				<h1>Team #16</h1>
+				<p>
+					<span class="highlight">Team members: </span><br/>
+					Sudhankarthick Jaisankar
+					<br/>
+					Sasikumar Kalimuthu
+				</p>
+			</div>
+		</div>
+
+	    <div class="slide" id="slide2" data-anchor="slide2">
+			<h1>Question #14</h1>
+			<p class="question">
+				Have an excel with name and countries in one sheet. Second sheet has Name and Company Name (not in same order). Using VBS, in third sheet, search for each of the name and add the corresponding name and company.
+			</p>
+		</div>
+
+		<div class="slide" id="slide3" data-anchor="slide3">
+			<script type="text/vbscript" language="vbscript">
+				Function button14()
+					MsgBox("Q14")
+					temp = MsgBox("Please enter the absolute path of the .xlsx file",0,"Instruction")
+					filePath = InputBox("Enter the file path","Enter Value")
+		 			msgbox filePath
+		 		End Function	
+			</script>
+			<table>
+				<tr>
+					<td><input type="button" name="submit" value="Q14" class="button" onclick="button14()"></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	
+
+</div>
+
+</body>
+</html>

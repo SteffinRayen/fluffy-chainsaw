@@ -7,6 +7,7 @@ Online VBScript Repo :)
 - [x] Create simple HTML to check environment
 - [x] Create Basic UI that IE10 supports
 - [x] Enter the questions
+- [ ] Started adding individual scripts
 - [ ] Integrate the answers
 - [ ] Tweak it a little
 
@@ -21,3 +22,6 @@ During run time, allow the blocked content (Scripts/ActiveX) in order to execute
 
 ### :paperclip: Further notes 
 > Some stuff to keep in mind :)
+* Full Page JS compatibility IE9 and above
+* VBscript compatibility IE10 and below
+* Dim/Const did not work in IE9 (?)

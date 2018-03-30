@@ -27,5 +27,6 @@ During run time, allow the blocked content (Scripts/ActiveX) in order to execute
 * VBscript compatibility IE10 and below
 * Dim/Const did not work in IE9 (?)
 * Added external vbs file... wondering what is the point of the 
-> `Set oShell = CreateObject ("WScript.Shell")` :person_frowning:
-> `Set WshShell = CreateObject("WScript.Shell")` :person_with_pouting_face:
+* `Set oShell = CreateObject ("WScript.Shell")` :person_frowning:
+* `Set WshShell = CreateObject("WScript.Shell")` :person_with_pouting_face:
+* Did splits in scripting, trying to layout basic skeletons :confused:

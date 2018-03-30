@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Q11</title>
+		<title>Editable</title>
 		<meta http-equiv="X-UA-Compatible" content="IE=9">
 		<link rel="stylesheet" type="text/css" href="main.css" />
 		<link rel="stylesheet" type="text/css" href="style.css" />
@@ -18,20 +18,18 @@
 		
 
 		<script type="text/javascript" src="main.js"></script>
+		<script type="text/vbscript" src="VBScripts/Simple.vbs"></script>
+		<script type="text/vbscript" src="VBScripts/ExcelSkeleton.vbs"></script>
+		
 	</head>
 	<body>
-		<script type="text/vbscript" language="vbscript">
-			Function button11()
-				MsgBox("Q11")
-				temp = MsgBox("Please enter the absolute path of the .xlsx file",0,"Instruction")
-				filePath = InputBox("Enter the file path","Enter Value")
-	 			msgbox filePath
-	 		End Function	
-		</script>
 
 		<table>
 			<tr>
-				<td><input type="button" name="submit" value="Q11" class="button" onclick="button11()"></td>
+				<td><input type="button" name="submit" value="Click Me!" class="button" onclick="Simple()"></td>
+			</tr>
+			<tr>
+				<td id = "Simple"></td>
 			</tr>
 		</table>
 

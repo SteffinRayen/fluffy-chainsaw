@@ -11,10 +11,8 @@
       Option Explicit
       Sub SubmitButton_onClick
          Dim largestNum                   
-         If IsNumeric(num1.value) and IsNumeric(num2.value) _
-                                  and IsNumeric(num3.value) Then
-            MsgBox "You have entered: " & num1.value & " " & num2.value & " " _
-                   & num3.value, vbOKOnly, "Entered Values"
+         If IsNumeric(num1.value) and IsNumeric(num2.value) and IsNumeric(num3.value) Then
+            MsgBox "You have entered: " & num1.value & " " & num2.value & " " & num3.value, vbOKOnly, "Entered Values"
       
             largestNum = num1.value
             If CDbl(num2.value) > CDbl(largestNum) Then
@@ -25,11 +23,9 @@
                largestNum = num3.value
             End If
       
-            MsgBox "The largest number entered is: "  & largestNum, vbOKOnly, _
-                   "Largest Number"
+            MsgBox "The largest number entered is: "  & largestNum, vbOKOnly, "Largest Number"
          Else
-            MsgBox "You must enter three numbers! Try Again", vbOKOnly, _
-                   "Invalid Input"
+            MsgBox "You must enter three numbers! Try Again", vbOKOnly,"Invalid Input"
          End If
       End Sub
     </script>

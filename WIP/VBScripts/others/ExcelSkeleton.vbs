@@ -9,6 +9,7 @@ Function ExcelSkeleton()
   
   rowCount=objExcel.ActiveWorkbook.Sheets(1).UsedRange.Rows.count
   colCount=objExcel.ActiveWorkbook.Sheets(1).UsedRange.Columns.count  
+  
   Msgbox("Rows    :" & rowCount)
   Msgbox("Columns :" & colCount) 
   

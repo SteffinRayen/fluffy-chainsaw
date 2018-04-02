@@ -1,6 +1,26 @@
 Function button01()
-	MsgBox("Q01")
-	temp = MsgBox("Please enter the absolute path of the .xlsx file",0,"Instruction")
-	filePath = InputBox("Enter the file path","Enter Value")
-	msgbox filePath
+	
+	filePathText = InputBox("Enter the file path .txt" ,"Enter Value")
+	Set TextFile = CreateObject("Scripting.FileSystemObject").OpenTextFile (filePathText, 1)
+
+	filePathExcel = InputBox("Enter the file path .xlsx","Enter Value")
+	Set objExcel = CreateObject("Excel.Application")
+	objExcel.Application.Visible = True
+	Set objWorkbook = objExcel.Workbooks.Open(filePathExcel)
+	Set objWorksheet = objWorkbook.Worksheets(1)
+
+	row = 0
+	Do Until TextFile.AtEndOfStream
+	  line = TextFile.Readline
+	  objWorksheet.Cells(row, 1).Value = line
+	  row = row + 1
+	Loop
+
+	TextFile.Close
+	objWorkbook.Save
+	objExcel.Quit
+
+	MsgBox "Data transfered Successfully",vbInformation
+
+
 End Function

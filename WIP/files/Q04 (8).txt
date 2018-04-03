@@ -1,0 +1,8 @@
+Account Number: ZZZZZZZ
+
+Customer details are as follows
+
+Customer Name: GHI
+
+Customer ID: 234324234
+

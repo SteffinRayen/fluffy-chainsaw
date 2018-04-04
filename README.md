@@ -24,7 +24,7 @@ Online VBScript Repo :)
 - [ ] Q09
 - [ ] Q10
 - [X] Q11
-- [ ] Q12
+- [X] Q12
 - [ ] Q13
 - [ ] Q14
 - [ ] Q15

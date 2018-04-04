@@ -11,6 +11,25 @@ Online VBScript Repo :)
 * Edit your script QNN.vbs in VBScript folder (Try to put everything into that one function pls)
 * Have fun >.<'
 
+## Questions Finished So far :)
+
+- [X] Q01
+- [ ] Q02
+- [ ] Q03
+- [X] Q04
+- [X] Q05
+- [ ] Q06
+- [X] Q07
+- [X] Q08
+- [ ] Q09
+- [ ] Q10
+- [X] Q11
+- [ ] Q12
+- [ ] Q13
+- [ ] Q14
+- [ ] Q15
+- [ ] Q16
+
 ## :heavy_check_mark: Task list  
 
 - [x] Create repo and edit Readme

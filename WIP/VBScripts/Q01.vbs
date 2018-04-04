@@ -1,26 +1,24 @@
 Function button01()
 	
 	filePathText = InputBox("Enter the file path .txt" ,"Enter Value")
-	Set TextFile = CreateObject("Scripting.FileSystemObject").OpenTextFile (filePathText, 1)
+	Set TextFile = CreateObject("Scripting.FileSystemObject").CreateTextFile (filePathText, 1)
+	TextFile.Write "Automation"&vbCrLf&"of"&vbCrLf&"txt file"&vbCrLf&"Using"&vbCrLf&"VBS"
+	TextFile.close
 
-	filePathExcel = InputBox("Enter the file path .xlsx","Enter Value")
+	MsgBox "Data Created Succesfuly Successfully",vbInformation
+	 
+	'The Excel file to be created
+	strOutput = InputBox("Enter the file path .xlsx without .xlsx" ,"Enter Value")
+	 
 	Set objExcel = CreateObject("Excel.Application")
-	objExcel.Application.Visible = True
-	Set objWorkbook = objExcel.Workbooks.Open(filePathExcel)
-	Set objWorksheet = objWorkbook.Worksheets(1)
+	objExcel.Visible = TRUE
+	 
+	Set objWorkbook = objExcel.Workbooks.Open(filePathText)
+	 
+	objExcel.ActiveWorkbook.SaveAs strOutput, 1
+	objExcel.ActiveWorkbook.Close
+	objExcel.Application.Quit
 
-	row = 0
-	Do Until TextFile.AtEndOfStream
-	  line = TextFile.Readline
-	  objWorksheet.Cells(row, 1).Value = line
-	  row = row + 1
-	Loop
-
-	TextFile.Close
-	objWorkbook.Save
-	objExcel.Quit
-
-	MsgBox "Data transfered Successfully",vbInformation
-
+	MsgBox "Data Tranfered Succesfuly Successfully",vbInformation
 
 End Function

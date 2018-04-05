@@ -1,67 +1,53 @@
 Function button15()
 
-	dim tag: set tag = document.getElementById("simpleText")
-	sFolder = InputBox("Enter the folder path to the screen shots","Enter Value")
-
+	sFolder = InputBox("Enter the folder path to the screen shots","Enter Value")  	'path for Screenshots
 	If sFolder = "" Then
 	  tag.InnerHtml ("No Folder parameter was passed")
 	End If
+	
+	filePath = InputBox("Enter the file path to .xlsx","Enter Value")                'path to save Excel file
+	'------------------------------------------------------------------------------------------------------------------------------------------------
+	
+	Set objExcel = CreateObject("Excel.Application")                                 'Object creation for Excel Application
+	objExcel.Application.Visible = True                                              'Making  Excel object Visible
+	Set objWorkbook = objExcel.Workbooks.Add()                                       'Adding a new Workbook
 
-	'Open a workbook
-	filePath = InputBox("Enter the file path to .xlsx","Enter Value")
-	Set objExcel = CreateObject("Excel.Application")
-	objExcel.Application.Visible = True
-	Set objWorkbook = objExcel.Workbooks.Open(filePath)
-
-	'Select a worksheet
-	Set objWorksheet1 = objWorkbook.Worksheets(1)
-	Set objWorksheet2 = objWorkbook.Worksheets(2)
-	Set objWorksheet3 = objWorkbook.Worksheets(3)
-	Set objWorksheet4 = objWorkbook.Worksheets(4)
-
-	Set folder = CreateObject("Scripting.FileSystemObject").GetFolder(sFolder)
-	Set files = folder.Files
+	'----------------------------------------------------------------------------------------------------------------------------------------------------
+	Set folder = CreateObject("Scripting.FileSystemObject").GetFolder(sFolder)       ' Creating Folder Object for Path mentioned
+	Set files = folder.Files                                                         ' Declaring variable files for for all Files in that folder
 	TestCase = 0
 	ScreenShot = 0
-	Counter = 0
-	For each folderIdx In files
-		'Will always read in Ascending order
+	TestCaseCount = 0
+	'--------------------------------------------------------------------------------------------------------------------------------------------------------
+	
+	
+	For each folderIdx In files                                             ' Loop to Read all Files in folder one by one ,Will always read in Ascending order
+		TestCase = Mid (folderIdx.Name,9,1)                                 ' To capture 9th letter of file name
+		ScreenShot = Mid (folderIdx.Name, 21 ,1)                            ' To capture 21th letter of file name
+		    IF TestCaseCount <> TestCase Then
+			    TestCaseCount = TestCase
+			    Set objWorksheet = objWorkbook.Worksheets.Add               'Adding a new Worksheet
+			    objWorksheet.Name="Testcase"&TestCase                       ' Naming the sheet 
+			    objWorkbook.Sheets(objWorksheet.Name).Activate              ' Activting current Worksheet
+                                               
+			END IF
+		IF TestCase = ScreenShot Then                                      
+		   i=0                                                             
+		END IF
+		     i=i+10                                                    
 		
-		TestCase = Mid (folderIdx.Name,9,1)
-		ScreenShot = Mid (folderIdx.Name, 21 ,1)
-
-		SELECT case TestCase
-			CASE 1
-				objWorksheet1.Cells(ScreenShot,1).Value = folderIdx.Name
-				'Add Image in this cell
-				'Image addition not working in Excel 10 :(
-				objWorksheet1.Cells(ScreenShot,2).Value = Trim(sFolder&"\"&folderIdx.Name)
-				
-				
-			CASE 2
-				objWorksheet2.Cells(ScreenShot,1).Value = folderIdx.Name
-				objWorksheet2.Cells(ScreenShot,2).Value = Trim(sFolder&"\"&folderIdx.Name)
-				
-			CASE 3
-				objWorksheet3.Cells(ScreenShot,1).Value = folderIdx.Name
-				objWorksheet3.Cells(ScreenShot,2).Value = Trim(sFolder&"\"&folderIdx.Name)
-				
-			CASE 4
-				objWorksheet4.Cells(ScreenShot,1).Value = folderIdx.Name
-				objWorksheet4.Cells(ScreenShot,2).Value = Trim(sFolder&"\"&folderIdx.Name)
-				
-
-		END SELECT
-		tag.InnerHtml = (tag.InnerHtml & TestCase &" "& ScreenShot &" "& folderIdx.Name &" A"&ScreenShot + Counter*2 &":B"&ScreenShot + Counter*2 + 1 &" <br>")
-		Counter = Counter + 1
+              objWorksheet.Cells(i,1).Select                                ' Selecting cell to insert
+	             
+				 With objExcel.ActiveCell.Worksheet.Pictures.Insert(sFolder&"\"&folderIdx.Name).ShapeRange     'inserting Picture
+                       .Height = 200                                                                           'Setting Dimension For picture
+                       .Width = 200
+                 End With
+                
 	Next
+  '-----------------------------------------------------------------------------------------------------------------------------------------------------------
+	
+	objWorkbook.SaveAs(filepath)                                               'Saving in Destination File Path
+	objExcel.Quit                                                              ' Quitting Excel Application
+	MsgBox "Screenshots sorted Successfully",vbInformation			
 
-	'Save the workbook,
-	objWorkbook.Save
-
-	objExcel.Quit
-	MsgBox "Screenshots sorted Successfully",vbInformation
-
-
-End Function
-
+End Function	

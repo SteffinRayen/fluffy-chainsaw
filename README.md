@@ -27,7 +27,7 @@ Online VBScript Repo :)
 - [X] Q12
 - [ ] Q13
 - [ ] Q14
-- [ ] Q15
+- [X] Q15
 - [ ] Q16
 
 ## :heavy_check_mark: Task list  

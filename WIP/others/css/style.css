@@ -197,7 +197,7 @@ input[type=text]:focus {
     padding-left: 4px;
 }
 .jpg{
-	background-image:url('../img/jpg.png'); 
+	background-image:url('../img/jpg.svg'); 
 	background-repeat: no-repeat; 
 	background-position: 3px 8px;
     background-size: 50px 50px;
@@ -205,21 +205,21 @@ input[type=text]:focus {
 }
 
 .search{
-	background-image:url('../img/search.png'); 
+	background-image:url('../img/search.svg'); 
 	background-repeat: no-repeat; 
 	background-position: 3px 8px;
     background-size: 50px 50px;
     padding-left: 4px; 
 }
 .txt{
-	background-image:url('../img/txt.png'); 
+	background-image:url('../img/txt.svg'); 
 	background-repeat: no-repeat; 
 	background-position: 3px 8px;
     background-size: 50px 50px;
     padding-left: 4px; 
 }
 .xml{
-	background-image:url('../img/xml.png'); 
+	background-image:url('../img/xml.svg'); 
 	background-repeat: no-repeat; 
 	background-position: 3px 8px;
     background-size: 50px 50px;

@@ -13,22 +13,22 @@ Online VBScript Repo :)
 
 ## Questions Finished So far :)
 
-- [X] Q01
-- [ ] Q02
-- [ ] Q03
-- [X] Q04
-- [X] Q05
-- [ ] Q06
-- [X] Q07
-- [X] Q08
-- [ ] Q09
-- [ ] Q10
-- [X] Q11
-- [X] Q12
-- [ ] Q13
-- [ ] Q14
-- [X] Q15
-- [ ] Q16
+- [X] Q01 Team_15 - Swathi Manoharan, Nivedha Ramesh
+- [ ] Q02 Team_03 - Thamilarasan Palani, Vishal Chacko
+- [ ] Q03 Team_06 - Bala Subramaniam Arunachalam, Balajivenkateswaran Sundarajan
+- [X] Q04 Team_12 - Jayadevi Durairajulu, Jagadish Kumar Muthalur Chandrasekar
+- [X] Q05 Team_14 - Munish Kumar Karthick Muni, Kumara Raja Subramani
+- [ ] Q06 Team_01 - Nivedha Ganeshan, Christus Colman Vincent Paul Arokiadass
+- [X] Q07 Team_13 - Ashlin Jenefer Christopher, Meenatchi Ramesh
+- [X] Q08 Team_09 - Sharika Sasikumar, Aravind Sagar Sellapandian
+- [X] Q09 Team_04 - Kaarthikaa Manimaran, Srinivasan Subramaniam
+- [ ] Q10 Team_11 - Sadhana Sundar, Sairaj Raju
+- [X] Q11 Team_05 - Mary Steffin Avila Rayen, Joseph Rajesh Joseph Antony Raj
+- [X] Q12 Team_08 - Venkatesh Parameswaran, Karthik Subramanian
+- [ ] Q13 Team_02 - Maheswari Mohana Sundaram, Mohan Rajasekaran
+- [ ] Q14 Team_16 - Sudhankarthick Jaisankar, Sasikumar Kalimuthu
+- [X] Q15 Team_07 - Mohamed Aejaz Mohamed Arifullam, Sameera Sareen Mohamed Ibrahim
+- [ ] Q16 Team_10 - Vignesh Kumar Sundararaj, Boopalan Natarajan
 
 ## :heavy_check_mark: Task list  
 
@@ -37,7 +37,7 @@ Online VBScript Repo :)
 - [x] Create Basic UI that IE10 supports
 - [x] Enter the questions
 - [x] Started adding individual scripts
-- [ ] 50% completion :)
+- [X] 50% completion :)
 - [ ] Integrate the answers
 - [ ] Tweak it a little
 

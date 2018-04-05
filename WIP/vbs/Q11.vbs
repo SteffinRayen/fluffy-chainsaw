@@ -1,11 +1,12 @@
 Function button11()
 
-	filePath = InputBox("Enter the file path","Enter Value")
-
+	
+	ExcelFilePath = document.getElementById("Q11").value
+	
 	Set objExcel = CreateObject("Excel.Application")
 	objExcel.Application.Visible = True
 
-	Set objWorkbook = objExcel.Workbooks.Open(filePath)
+	Set objWorkbook = objExcel.Workbooks.Open(ExcelFilePath)
 	Set objWorksheet = objWorkbook.Worksheets(1)
 
 	rowCount = objExcel.ActiveWorkbook.Sheets(1).UsedRange.Rows.count

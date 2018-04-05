@@ -33,7 +33,7 @@ Function button12()
 	Set TextFile = Nothing
 	objWorkbook.Save
 	objExcel.Quit
-	MsgBox "Data Split Successfully",vbInformation
+	MsgBox "Data categorized Successfully",vbInformation
 
 
 End Function

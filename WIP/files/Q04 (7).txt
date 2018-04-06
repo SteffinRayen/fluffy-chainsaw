@@ -1,7 +1,0 @@
-Account Number: YYYYYYY
-
-Customer details are as follows
-
-Customer Name: DEF
-
-Customer ID: 234324234

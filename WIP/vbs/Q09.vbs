@@ -565,31 +565,5 @@ Function button09()
 		objFSO.copyFolder"F:\Reader\*","F:\folder"
 		MsgBox "countof FOLDER=" & objFSO.GetFolder("F:\folder").Subfolders.Count
 	END If
-	MsgBox "A= " & countofA_
-	& vbCrlf & "B= " & countofB_
-	& vbCrlf & "C= " & countofC_
-	& vbCrlf & "D= " & countofD_
-	& vbCrlf & "E= " & countofE_
-	& vbCrlf & "F= " & countofF_
-	& vbCrlf & "G= " & countofG_
-	& vbCrlf & "H= " & countofH_
-	& vbCrlf & "I= " & countofI_
-	& vbCrlf & "J= " & countofJ_
-	& vbCrlf & "K= " & countofK_
-	& vbCrlf & "L= " & countofL_
-	& vbCrlf & "M= " & countofM_
-	& vbCrlf & "N= " & countofN_
-	& vbCrlf & "O= " & countofO_
-	& vbCrlf & "P= " & countofP_
-	& vbCrlf & "Q= " & countofQ_
-	& vbCrlf & "R= " & countofR_
-	& vbCrlf & "S= " & countofS_
-	& vbCrlf & "T= " & countofT_
-	& vbCrlf & "U= " & countofU_
-	& vbCrlf & "V= " & countofV_
-	& vbCrlf & "W= " & countofW_
-	& vbCrlf & "X= " & countofX_
-	& vbCrlf & "Y= " & countofY_
-	& vbCrlf & "Z= " & countofZ_
-	& vbCrlf & "Done."
+	MsgBox "A= " & countofA	& vbCrlf & "B= " & countofB	& vbCrlf & "C= " & countofC	& vbCrlf & "D= " & countofD	& vbCrlf & "E= " & countofE	& vbCrlf & "F= " & countofF	& vbCrlf & "G= " & countofG	& vbCrlf & "H= " & countofH	& vbCrlf & "I= " & countofI	& vbCrlf & "J= " & countofJ	& vbCrlf & "K= " & countofK	& vbCrlf & "L= " & countofL	& vbCrlf & "M= " & countofM	& vbCrlf & "N= " & countofN	& vbCrlf & "O= " & countofO	& vbCrlf & "P= " & countofP	& vbCrlf & "Q= " & countofQ	& vbCrlf & "R= " & countofR	& vbCrlf & "S= " & countofS	& vbCrlf & "T= " & countofT	& vbCrlf & "U= " & countofU	& vbCrlf & "V= " & countofV	& vbCrlf & "W= " & countofW	& vbCrlf & "X= " & countofX	& vbCrlf & "Y= " & countofY	& vbCrlf & "Z= " & countofZ	& vbCrlf & "Done."
 End Function

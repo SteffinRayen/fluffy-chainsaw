@@ -22,7 +22,7 @@ Online VBScript Repo :)
 - [X] Q07 Team_13 - Ashlin Jenefer Christopher, Meenatchi Ramesh
 - [X] Q08 Team_09 - Sharika Sasikumar, Aravind Sagar Sellapandian
 - [X] Q09 Team_04 - Kaarthikaa Manimaran, Srinivasan Subramaniam
-- [ ] Q10 Team_11 - Sadhana Sundar, Sairaj Raju
+- [X] Q10 Team_11 - Sadhana Sundar, Sairaj Raju
 - [X] Q11 Team_05 - Mary Steffin Avila Rayen, Joseph Rajesh Joseph Antony Raj
 - [X] Q12 Team_08 - Venkatesh Parameswaran, Karthik Subramanian
 - [X] Q13 Team_02 - Maheswari Mohana Sundaram, Mohan Rajasekaran

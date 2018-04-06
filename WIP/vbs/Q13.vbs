@@ -18,26 +18,31 @@ Function button13()
 	Set objWorksheet2 = objWorkbook2.Worksheets(1)
 
 	for intRow  = 1 to rowCount1 step 1
-		CountryArray(introw -1) = objWorksheet1.Cells(intRow, 2)		
+		CountryArray(introw -1) = objWorksheet1.Cells(intRow, 2).Value		
 	next
 	
 	Dim UniqCountry : UniqCountry = uniq(CountryArray)
 	NoOfCountries = uBound (UniqCountry) + 1
 	
 	Dim CountryDict : Set CountryDict = CreateObject("Scripting.Dictionary")
-
 	count = 1
 	for each word in UniqCountry
-		'objWorksheet2.Cells(count, 1).Value = word
-
+		objWorksheet2.Cells(count, 1).Value = word
+		objWorksheet2.Cells(count, 2).Value = 0
 		count = count + 1
 	next
 
-	
-	For i = 0 To UBound(UniqCountry)-1
-		CountryDict.Add a(i), a(i+1)
-	Next
+	for intRow1 = 1 to rowCount1 step 1
+		
+		for intRow2 = 1 to NoOfCountries step 1
+			If objWorksheet1.Cells(intRow1, 2).Value = objWorksheet2.Cells(intRow2, 1).Value then
+				objWorksheet2.Cells(intRow2, 2).Value = objWorksheet2.Cells(intRow2, 2).Value + 1
+				temp = objWorksheet2.Cells(intRow2, 2).Value
+				objWorksheet2.Cells(intRow2, temp + 2).Value = objWorksheet1.Cells(intRow1, 1).Value 
+			End If
+		next
 
+	next
 	
 	
 	objWorkbook1.Save

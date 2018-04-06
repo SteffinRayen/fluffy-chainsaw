@@ -1,6 +1,7 @@
 Function button11()
 	
-	ExcelFilePath = document.getElementById("Q11_1").value
+	'ExcelFilePath = document.getElementById("Q11_1").value
+	ExcelFilePath = InputBox ("Enter .xlsx file path")
 	
 	Set objExcel = CreateObject("Excel.Application")
 	objExcel.Application.Visible = True

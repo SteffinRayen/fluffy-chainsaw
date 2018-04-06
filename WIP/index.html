@@ -34,7 +34,7 @@
 		});
 	</script>
 	<script type="text/vbscript" src="vbs/Q01.vbs"></script>
-	<script type="text/vbscript" src="vbs/search.vbs"></script>
+	<script type="text/vbscript" src="vbs/Q02.vbs"></script>
 	<script type="text/vbscript" src="vbs/Q03.vbs"></script>
 	<script type="text/vbscript" src="vbs/Q04.vbs"></script>
 	<script type="text/vbscript" src="vbs/Q05.vbs"></script>
@@ -115,7 +115,7 @@
 			
 			<table>
 				<tr>
-					<td><input id="Q06_1" class="search" type="text" name="Q06" placeholder="Enter the MS Access File path" /> </td>
+					<td><input id="Q06_1" class="file" type="text" name="Q06" placeholder="Enter the MS Access File path" /> </td>
 				</tr>
 				<tr>
 					<td><input id="Q06_2" class="xls" type="text" name="Q06" placeholder="Enter the MS Excel File path" /> </td>
@@ -184,7 +184,10 @@
 			
 			<table>
 				<tr>
-					<td><input id="Q02_1" class="xls" type="text" name="Q02" placeholder="Enter the MS Excel File path"/> </td>
+					<td><input id="Q02_1" class="folder" type="text" name="Q02" placeholder="Enter the Folder path"/> </td>
+				</tr>
+				<tr>
+					<td><input id="Q02_2" class="xls" type="text" name="Q02" placeholder="Enter the MS Excel File path"/> </td>
 				</tr>
 				<tr>
 					<td><input type="button" name="submit" value="Open" class="button" onclick="button02()"></td>
@@ -309,7 +312,7 @@
 		<div class="slide" id="slide3" data-anchor="slide3">
 			<table>
 				<tr>
-					<td><input id="Q15_1" class="search" type="text" name="Q15" placeholder="Enter the Folder path which has the screenshots"/> </td>
+					<td><input id="Q15_1" class="folder" type="text" name="Q15" placeholder="Enter the Folder path which has the screenshots"/> </td>
 				</tr>
 				<tr>
 					<td><input id="Q15_2" class="xls" type="text" name="Q15" placeholder="Enter the MS Excel File path"/> </td>
@@ -381,6 +384,7 @@
 				<tr>
 					<td><input id="Q08_1" class="xls" type="text" name="Q02" placeholder="Enter the MS Excel File path"/> </td>
 				</tr>
+				<tr>
 				<tr>
 					<td><input type="button" name="submit" value="Validate" class="button" onclick="button08()"></td>
 				</tr>
@@ -454,8 +458,8 @@
 			
 			<table>
 				<tr>
-					<td><input id="Q10_1" class="font" type="text" name="Q10" placeholder="A/D" /> </td>
-					<td><input id="Q10_2" class="font" type="text" name="Q10" placeholder="Enter the Column Name" /> </td>
+					<td><input id="Q10_1" class="file" type="text" name="Q10" placeholder="A/D" /> </td>
+					<td><input id="Q10_2" class="file" type="text" name="Q10" placeholder="Enter the Column Name" /> </td>
 				</tr>
 				<tr>
 					<td colspan="2"><input id="Q10_3" class="xls" type="text" name="Q10" placeholder="Enter the MS Excel File path"/> </td>
@@ -499,15 +503,15 @@
 			
 			<table>
 				<tr>
-					<td colspan="2"><input id="Q04_1" class="txt" type="text" name="Q04" placeholder="Enter the Text File path (till folder name without \)"/> </td>
-				</tr>
-				<tr>
-					
+					<td><input id="Q04_1" class="folder" type="text" name="Q04" placeholder="Enter the Text File path"/> </td>
 					<td><input id="Q04_2" class="txt" type="text" name="Q04" placeholder="Enter the Text File name"/> </td>
-					<td><input id="Q04_3" class="search" type="text" name="Q04" placeholder="Enter the no of files" /> </td>
 				</tr>
 				<tr>
-					<td colspan="2"><input id="Q04_4" class="xls" type="text" name="Q04" placeholder="Enter the MS Excel File path"/> </td>
+					<td colspan="2"><input id="Q04_3" class="file" type="text" name="Q04" placeholder="Enter the no of files" /> </td>
+				</tr>
+				<tr>
+					<td ><input id="Q04_4" class="folder" type="text" name="Q04" placeholder="Enter the MS Excel File path"/> </td>
+					<td ><input id="Q04_5" class="xls" type="text" name="Q04" placeholder="Enter the MS Excel File path"/> </td>
 				</tr>
 				<tr>
 					<td colspan="2"><input type="button" name="submit" value="Extract" class="button" onclick="button04()"></td>
@@ -545,7 +549,7 @@
 					<td><input id="Q07_2" class="xls" type="text" name="Q07" placeholder="Enter the MS Excel File path (without Extention)"/> </td>
 				</tr>
 				<tr>
-					<td><input type="button" name="submit" value="Q07" class="button" onclick="button07()"></td>
+					<td><input type="button" name="submit" value="Merge" class="button" onclick="button07()"></td>
 				</tr>
 			</table>
 		</div>

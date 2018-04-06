@@ -225,3 +225,7 @@ input[type=text]:focus {
     background-size: 50px 50px;
     padding-left: 4px; 
 }
+
+.placeholder {
+  color: #eee;
+}

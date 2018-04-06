@@ -208,8 +208,8 @@ input[type=text]:focus {
 .xml{
 	background-image:url('../img/xml.svg'); 	 
 }
-.font{
-	background-image:url('../img/font.svg'); 	 
+.file{
+	background-image:url('../img/file.svg'); 	 
 }
 .folder{
 	background-image:url('../img/folder.svg'); 	 

@@ -194,24 +194,25 @@ input[type=text]:focus {
 
 .xls{
 	background-image:url('../img/xls.svg'); 
-	
 }
 .jpg{
 	background-image:url('../img/jpg.svg'); 
-	 
 }
 
 .search{
 	background-image:url('../img/search.svg'); 
-	 
 }
 .txt{
 	background-image:url('../img/txt.svg'); 
-	 
 }
 .xml{
-	background-image:url('../img/xml.svg'); 
-	 
+	background-image:url('../img/xml.svg'); 	 
+}
+.font{
+	background-image:url('../img/font.svg'); 	 
+}
+.folder{
+	background-image:url('../img/folder.svg'); 	 
 }
 
 .placeholder {

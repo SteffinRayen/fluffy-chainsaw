@@ -180,9 +180,12 @@ input[type=text] {
     background-color: white;
     border: 3px solid #000;
     border-radius: 5px;
-    text-indent:35px;
+    padding-left: 55px;
     font-size:24px;
     font-family: "Comic Sans MS", cursive, sans-serif;
+    background-repeat: no-repeat; 
+	background-position: 3px 8px;
+    background-size: 50px 50px;
 }
 
 input[type=text]:focus {
@@ -191,39 +194,24 @@ input[type=text]:focus {
 
 .xls{
 	background-image:url('../img/xls.svg'); 
-	background-repeat: no-repeat; 
-	background-position: 3px 8px;
-    background-size: 50px 50px;
-    padding-left: 4px;
+	
 }
 .jpg{
 	background-image:url('../img/jpg.svg'); 
-	background-repeat: no-repeat; 
-	background-position: 3px 8px;
-    background-size: 50px 50px;
-    padding-left: 4px; 
+	 
 }
 
 .search{
 	background-image:url('../img/search.svg'); 
-	background-repeat: no-repeat; 
-	background-position: 3px 8px;
-    background-size: 50px 50px;
-    padding-left: 4px; 
+	 
 }
 .txt{
 	background-image:url('../img/txt.svg'); 
-	background-repeat: no-repeat; 
-	background-position: 3px 8px;
-    background-size: 50px 50px;
-    padding-left: 4px; 
+	 
 }
 .xml{
 	background-image:url('../img/xml.svg'); 
-	background-repeat: no-repeat; 
-	background-position: 3px 8px;
-    background-size: 50px 50px;
-    padding-left: 4px; 
+	 
 }
 
 .placeholder {

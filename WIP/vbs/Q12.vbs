@@ -1,9 +1,9 @@
 Function button12()
 
-	TextFilePath = InputBox("Enter the file path .txt" ,"Enter Value")
+	TextFilePath = document.getElementById("Q12_1").value
 	Set TextFile = CreateObject("Scripting.FileSystemObject").OpenTextFile(TextFilePath)
 
-	ExcelFilePath =  InputBox("Enter the file path .xlsx","Enter Value")
+	ExcelFilePath =  document.getElementById("Q12_2").value
 	Set objExcel = CreateObject("Excel.Application")
 	objExcel.Application.Visible = True
 	Set objWorkbook = objExcel.Workbooks.Open(ExcelFilePath)

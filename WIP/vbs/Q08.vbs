@@ -1,17 +1,10 @@
 Function button08()
 	
-	'Open a workbook
-	filePath = InputBox("Enter the file path","Enter Value")
-
-	'Launch Excel
+	filePath = document.getElementById("Q08_1").value
 	Set objExcel = CreateObject("Excel.Application")
-
-	'Set Excel to be visible
 	objExcel.Application.Visible = True
-
 	Set objWorkbook = objExcel.Workbooks.Open(filePath)
 
-	'Select a worksheet
 	Set objWorksheet1 = objWorkbook.Worksheets(1)
 	Set objWorksheet2 = objWorkbook.Worksheets(2)
 	Set objWorksheet3 = objWorkbook.Worksheets(3)
@@ -30,10 +23,7 @@ Function button08()
 		End If
 	next
 
-	'Save the workbook,
 	objWorkbook.Save
-
-	'Quit Excel
 	objExcel.Quit
 
 	MsgBox "Data validated succesfully",vbInformation

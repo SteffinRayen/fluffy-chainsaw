@@ -1,9 +1,7 @@
 Function button13()
 
-	dim tag: set tag = document.getElementById("simpleText")
-
-	FilePath1 = "C:\Users\Steffin Rayen\Desktop\GIT_WORKSPACE\fluffy-chainsaw\WIP\files\Q13.xlsx" 'InputBox("Enter the file path .xlsx" ,"Enter Value")
-	FilePath2 = "C:\Users\Steffin Rayen\Desktop\GIT_WORKSPACE\fluffy-chainsaw\WIP\files\Q13A.xlsx" 'InputBox("Enter the file path .xlsx" ,"Enter Value")
+	FilePath1 = document.getElementById("Q13_1").value
+	FilePath2 = document.getElementById("Q13_2").value
 	
 	Set objExcel1 = CreateObject("Excel.Application")
 	objExcel1.Application.Visible = True
@@ -34,8 +32,6 @@ Function button13()
 
 		count = count + 1
 	next
-
-	tag.InnerHtml = (tag.InnerHtml & CountryDict.keys() &" <br>")
 
 	
 	For i = 0 To UBound(UniqCountry)-1

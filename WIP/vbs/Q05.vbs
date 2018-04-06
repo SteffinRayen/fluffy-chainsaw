@@ -1,11 +1,11 @@
 Function button05()
 
     Set ObjXML = CreateObject ("Microsoft.XMLDOM")   
-	filePathXML = InputBox("Enter the file path of XML","Enter Value")
+	filePathXML = document.getElementById("Q05_1").value
     ObjXML.load(filePathXML)  
     ObjXML.async = False   
 
-	filePathExcel = InputBox("Enter the file path of Excel","Enter Value")
+	filePathExcel = document.getElementById("Q05_2").value
     Set objExcel = CreateObject("Excel.Application")  
     Set objWorkbook =  objExcel.Workbooks.Open (filePathExcel)  
     objExcel.Application.Visible = True  

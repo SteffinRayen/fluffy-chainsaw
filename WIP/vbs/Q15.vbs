@@ -1,11 +1,11 @@
 Function button15()
 
-	sFolder = InputBox("Enter the folder path to the screen shots","Enter Value")  	'path for Screenshots
+	sFolder = document.getElementById("Q15_1").value  	'path for Screenshots
 	If sFolder = "" Then
-	  tag.InnerHtml ("No Folder parameter was passed")
+	  MsgBox ("No Folder parameter was passed")
 	End If
 	
-	filePath = InputBox("Enter the file path to .xlsx","Enter Value")                'path to save Excel file
+	filePath = document.getElementById("Q15_2").value                'path to save Excel file
 	'------------------------------------------------------------------------------------------------------------------------------------------------
 	
 	Set objExcel = CreateObject("Excel.Application")                                 'Object creation for Excel Application

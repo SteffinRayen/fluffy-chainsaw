@@ -1,8 +1,10 @@
 Function button04()
-	Input = InputBox("Enter the location of the customer detail files")
-	Output = InputBox("Enter the location for exporting the excel file")
-	Xcelname = InputBox("Enter a name for the output file")
-	Count = Inputbox("Enter the total number of customers")
+	Input = document.getElementById("Q04_1").value
+	Output = document.getElementById("Q04_4").value
+
+	TextName = document.getElementById("Q04_2").value
+	XcelName = document.getElementById("Q04_5").value
+	Count = document.getElementById("Q04_3").value
 	
 	Set objExcel = CreateObject("Excel.Application")
 	objExcel.Workbooks.Add
@@ -10,7 +12,7 @@ Function button04()
 	objSheet.Name = "Customer Details"
 
 	'Output Should be without file name
-	strExcelPath = Output+"\"+Xcelname+".xlsx"
+	strExcelPath = Output+"\"+XcelName+".xlsx"
 
 	objSheet.Cells(1, 1).Value = "Account Number" 'Row 1 Column 1 (A)
 	objSheet.Cells(1, 2).Value = "Customer Name" 'Row 1 Column 2 (B)
@@ -20,7 +22,7 @@ Function button04()
 	for textFile = 1 to Count
 
 		'Input should be till before \
-		Set ReadTextFile = FSO.OpenTextFile(Input+"\Q04 ("&textFile&").txt", 1)
+		Set ReadTextFile = FSO.OpenTextFile(Input+"\"&TextName&" ("&textFile&").txt", 1)
 		Do Until ReadTextFile.AtEndOfStream
 
 			Textline = ReadTextFile.Readline()

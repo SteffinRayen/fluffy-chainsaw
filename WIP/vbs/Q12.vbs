@@ -11,6 +11,7 @@ Function button12()
 
 	CounterA = 2
 	CounterB = 2
+	CounterC = 2
 
 	do while not TextFile.AtEndOfStream
 
@@ -22,7 +23,10 @@ Function button12()
 			If IsNumeric(word) Then
 				objWorksheet.Cells(CounterA, 1).Value = word
 				CounterA = CounterA + 1
-			Else
+			ElseIf IsDate(word) Then 
+		        objWorksheet.Cells(CounterC, 3).Value = word
+				CounterC = CounterC + 1
+		    Else  
 				objWorksheet.Cells(CounterB, 2).Value = word
 				CounterB = CounterB + 1
 			End if

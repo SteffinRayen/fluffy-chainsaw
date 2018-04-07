@@ -26,7 +26,7 @@ Online VBScript Repo :)
 - [X] Q11 Team_05 - Mary Steffin Avila Rayen, Joseph Rajesh Joseph Antony Raj
 - [X] Q12 Team_08 - Venkatesh Parameswaran, Karthik Subramanian
 - [X] Q13 Team_02 - Maheswari Mohana Sundaram, Mohan Rajasekaran
-- [ ] Q14 Team_16 - Sudhankarthick Jaisankar, Sasikumar Kalimuthu
+- [X] Q14 Team_16 - Sudhankarthick Jaisankar, Sasikumar Kalimuthu
 - [X] Q15 Team_07 - Mohamed Aejaz Mohamed Arifullam, Sameera Sareen Mohamed Ibrahim
 - [ ] Q16 Team_10 - Vignesh Kumar Sundararaj, Boopalan Natarajan
 

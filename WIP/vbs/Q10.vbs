@@ -10,7 +10,6 @@ Function button10()
 	rowCount=objExcel.ActiveWorkbook.Sheets(1).UsedRange.Rows.count
 	colCount=objExcel.ActiveWorkbook.Sheets(1).UsedRange.Columns.count 
 	
-
 	ReDim ColArray(colCount) 
 	
 	For i = 1 to colCount Step 2

@@ -2,10 +2,12 @@ Function button01()
 	
 	filePathText = document.getElementById("Q01_1").value
 	Set TextFile = CreateObject("Scripting.FileSystemObject").CreateTextFile (filePathText, 1)
+
 	TextFile.Write "Automation"&vbCrLf&"of"&vbCrLf&"txt file"&vbCrLf&"Using"&vbCrLf&"VBS"
+	
 	TextFile.close
 
-	MsgBox "Data Created Succesfuly Successfully",vbInformation
+	MsgBox "Text File Created Succesfuly Successfully",vbInformation
 	 
 	'The Excel file to be created
 	strOutput = document.getElementById("Q01_2").value 

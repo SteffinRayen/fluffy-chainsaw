@@ -1,4 +1,5 @@
 Function button04()
+
 	Input = document.getElementById("Q04_1").value
 	Output = document.getElementById("Q04_4").value
 

@@ -38,8 +38,8 @@ Online VBScript Repo :)
 - [x] Enter the questions
 - [x] Started adding individual scripts
 - [X] 50% completion :)
-- [ ] Integrate the answers
-- [ ] Tweak it a little
+- [X] Integrate the answers
+- [X] Tweak it a little
 
 ## :pushpin: Note: 
 > Download the repo and run the index.html in IE browser.

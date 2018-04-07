@@ -1,7 +1,6 @@
 Function button11()
 	
-	'ExcelFilePath = document.getElementById("Q11_1").value
-	ExcelFilePath = InputBox ("Enter .xlsx file path")
+	ExcelFilePath = document.getElementById("Q11_1").value
 	
 	Set objExcel = CreateObject("Excel.Application")
 	objExcel.Application.Visible = True
@@ -11,12 +10,10 @@ Function button11()
 	rowCount = objExcel.ActiveWorkbook.Sheets(1).UsedRange.Rows.count
 	
 	for intRow  = 1 to rowCount step 1
-	'Get the value of cell A1
 		strCellValue = Split(objExcel.Cells(introw, 1).Value)
 		count = 2
 	
 		for each word in strCellValue
-			'Put the value of strCellValue into cell A2
 			length_of_word = instrrev(word,right(word,1))
 			objWorksheet.Cells(intRow, count).Value = word &" "& length_of_word
 			count = count + 1
@@ -25,6 +22,9 @@ Function button11()
 	
 	objWorkbook.Save
 	objExcel.Quit
+	Set objWorksheet = Nothing
+	Set objWorkbook = Nothing
+	Set objExcel = Nothing
 	
 	MsgBox "Data Split Successfully",vbInformation
 

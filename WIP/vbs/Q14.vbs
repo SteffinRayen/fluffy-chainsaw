@@ -28,4 +28,5 @@ Function button14()
 	objExcel.Quit
 
 	MsgBox "Data Collated Successfully",vbInformation
+
 End Function

@@ -5,15 +5,12 @@ Function button16()
 	Set objExcel = CreateObject("Excel.Application")
 	objExcel.Application.Visible = True
 	Set objWorkbook = objExcel.Workbooks.Open(excelPath)
+	
 	Set objWorksheet1 = objWorkbook.Worksheets(1)
 	Set objWorksheet2 = objWorkbook.Worksheets(2)
 	Set objWorksheet3 = objWorkbook.Worksheets(3)
 
 	rowCount1 = objWorksheet1.UsedRange.Rows.Count
-	top = objWorksheet1.UsedRange.Row
-	ileft = objWorksheet1.UsedRange.Column
-	Set Cells = objWorksheet1.Cells
-
 	
 	'Name
 	For row = 2 to (rowCount1-1)
@@ -80,11 +77,9 @@ Function button16()
 		end if
 	Next
 
-
 	objWorkbook.Save
 	objExcel.Quit	
-	Set objWorksheet1 = Nothing
-	Set objWorksheet1 = Nothing
-	Set objExcel = Nothing    
-	MsgBox "Data Validated Successfully",vbInformation 	    	 
+	
+	MsgBox "Data Validated Successfully",vbInformation 	  
+
 End Function

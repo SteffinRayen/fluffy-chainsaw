@@ -14,21 +14,21 @@ Online VBScript Repo :)
 ## Questions Finished So far :)
 
 - [X] Q01 Team_15 - Swathi Manoharan, Nivedha Ramesh
-- [ ] Q02 Team_03 - Thamilarasan Palani, Vishal Chacko
-- [ ] Q03 Team_06 - Bala Subramaniam Arunachalam, Balajivenkateswaran Sundarajan
+- [ ] ~~Q02 Team_03 - Thamilarasan Palani, Vishal Chacko~~
+- [ ] ~~Q03 Team_06 - Bala Subramaniam Arunachalam, Balajivenkateswaran Sundarajan~~
 - [X] Q04 Team_12 - Jayadevi Durairajulu, Jagadish Kumar Muthalur Chandrasekar
 - [X] Q05 Team_14 - Munish Kumar Karthick Muni, Kumara Raja Subramani
-- [ ] Q06 Team_01 - Nivedha Ganeshan, Christus Colman Vincent Paul Arokiadass
+- [ ] ~~Q06 Team_01 - Nivedha Ganeshan, Christus Colman Vincent Paul Arokiadass~~
 - [X] Q07 Team_13 - Ashlin Jenefer Christopher, Meenatchi Ramesh
 - [X] Q08 Team_09 - Sharika Sasikumar, Aravind Sagar Sellapandian
-- [ ] Q09 Team_04 - Kaarthikaa Manimaran, Srinivasan Subramaniam
+- [ ] ~~Q09 Team_04 - Kaarthikaa Manimaran, Srinivasan Subramaniam~~
 - [X] Q10 Team_11 - Sadhana Sundar, Sairaj Raju
 - [X] Q11 Team_05 - Mary Steffin Avila Rayen, Joseph Rajesh Joseph Antony Raj
 - [X] Q12 Team_08 - Venkatesh Parameswaran, Karthik Subramanian
 - [X] Q13 Team_02 - Maheswari Mohana Sundaram, Mohan Rajasekaran
 - [X] Q14 Team_16 - Sudhankarthick Jaisankar, Sasikumar Kalimuthu
 - [X] Q15 Team_07 - Mohamed Aejaz Mohamed Arifullam, Sameera Sareen Mohamed Ibrahim
-- [ ] Q16 Team_10 - Vignesh Kumar Sundararaj, Boopalan Natarajan
+- [X] Q16 Team_10 - Vignesh Kumar Sundararaj, Boopalan Natarajan
 
 ## :heavy_check_mark: Task list  
 

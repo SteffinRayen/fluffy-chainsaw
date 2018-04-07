@@ -7,7 +7,7 @@ Function button01()
 	
 	TextFile.close
 
-	MsgBox "Text File Created Succesfuly Successfully",vbInformation
+	MsgBox "Text File Created Succesfuly",vbInformation
 	 
 	'The Excel file to be created
 	strOutput = document.getElementById("Q01_2").value 
@@ -20,6 +20,6 @@ Function button01()
 	objExcel.ActiveWorkbook.Close
 	objExcel.Application.Quit
 
-	MsgBox "Data Tranfered Succesfuly Successfully",vbInformation
+	MsgBox "Data Tranfered Succesfuly",vbInformation
 
 End Function

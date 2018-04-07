@@ -195,13 +195,6 @@ input[type=text]:focus {
 .xls{
 	background-image:url('../img/xls.svg'); 
 }
-.jpg{
-	background-image:url('../img/jpg.svg'); 
-}
-
-.search{
-	background-image:url('../img/search.svg'); 
-}
 .txt{
 	background-image:url('../img/txt.svg'); 
 }
@@ -216,5 +209,5 @@ input[type=text]:focus {
 }
 
 .placeholder {
-  color: #eee;
+  color: rgba(2,2,2, 0.1);;
 }

@@ -1,5 +1,0 @@
-Automation
-of
-txt file
-Using
-VBS

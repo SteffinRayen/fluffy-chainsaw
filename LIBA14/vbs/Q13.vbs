@@ -14,7 +14,7 @@ Function button13()
 
 	Set objExcel2 = CreateObject("Excel.Application")
 	objExcel2.Application.Visible = True
-	Set objWorkbook2 = objExcel2.Workbooks.Open(FilePath2)
+	Set objWorkbook2 = objExcel2.Workbooks.Add()
 	Set objWorksheet2 = objWorkbook2.Worksheets(1)
 
 	for intRow  = 1 to rowCount1 step 1
@@ -46,7 +46,7 @@ Function button13()
 
 	objWorkbook1.Save
 	objExcel1.Quit
-	objWorkbook2.Save
+	objWorkbook2.SaveAs FilePath2
 	objExcel2.Quit
 
 	MsgBox "Data sorted Successfully",vbInformation

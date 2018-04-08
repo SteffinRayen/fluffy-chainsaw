@@ -5,10 +5,10 @@ Function button14()
 	
 	' Open specified spreadsheet and select the first worksheet.
 	Set objExcel = CreateObject("Excel.Application")
-	objExcel.WorkBooks.Open strExcelPath
-	Set objSheet1 = objExcel.ActiveWorkbook.Worksheets(1)
-	Set objSheet2 = objExcel.ActiveWorkbook.Worksheets(2)
-	Set objSheet3 = objExcel.ActiveWorkbook.Worksheets(3)
+	Set objWorkbook = objExcel.Workbooks.Open(FilePath1)
+	Set objSheet1 = objWorkbook.Worksheets(1)
+	Set objSheet2 = objWorkbook.Worksheets(2)
+	Set objSheet3 = objWorkbook.Worksheets(3)
 	totalrows=objSheet2.UsedRange.Rows.Count
 	totalrows1=objSheet1.UsedRange.Rows.Count
 	tr=objSheet3.UsedRange.Rows.Count
@@ -36,7 +36,6 @@ Function button14()
 	MsgBox "Done",vbInformation
 	
 	' Save and quit.
-	objExcel.ActiveWorkbook.Save
-	objExcel.ActiveWorkbook.Close
-	objExcel.Application.Quit
+	objWorkbook.Save
+	objExcel.Quit
 End Function

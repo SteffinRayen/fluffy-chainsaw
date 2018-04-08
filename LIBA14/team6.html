@@ -1,0 +1,107 @@
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <link rel="icon" href="others\img\favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="others\img\favicon.ico" type="image/x-icon"/>
+    <!--[if IE]>
+    <script type="text/javascript">
+      var console = { log: function() {} };
+    </script>
+    <![endif]-->
+    <title>LIBA14 VB scripting</title>
+    <script type="text/vbscript">
+      Function ExecuteVBSFile(fileName)
+        Dim folderPath,fileDriveSplit,fileDrive,executionMode,Command,fso1,fullPath1
+        
+        folderPath = document.getElementById("Q03_1").value    
+        fileDriveSplit = Split(folderPath,":")
+        fileDrive = fileDriveSplit(0) & ":" 
+      
+        executionMode="cscript " & fileName & ".vbs"
+        Set fso1=CreateObject("Scripting.FileSystemObject")
+        Set WshShell = CreateObject("WScript.Shell")
+        fullPath1=folderPath & fileName & ".vbs"
+        If fso1.FileExists(fullPath1) Then
+          Command = "cmd /K" & fileDrive & "&" & "cd " & folderPath & "&" & executionMode
+          WshShell.Run Command
+        Else
+          MsgBox "File not found in the given path",vbOKOnly+vbCritical,"Incorrect path"
+        End If
+        Set WshShell = Nothing
+      End Function
+      
+    </script>
+    <style type="text/css">
+      html, body {
+        height: 100%;
+        background: #e67e22;
+      }
+      table {
+        width: 75%;
+        text-align: center;
+      }
+      .center {
+        width: 1400px;
+        height: 300px;
+        position: absolute;
+        left: 50%;
+        top: 50%; 
+        margin-left: -700px;
+        margin-top: -150px;
+        vertical-align: middle;
+        text-align: center;
+      }
+      .button {
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 16px 40px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 24px;
+        margin: 4px 2px;
+        -webkit-transition-duration: 0.4s; /* Safari */
+        transition-duration: 0.4s;
+        cursor: pointer;
+        background-color: white;
+        color: black;
+        border: 3px solid #000;
+        border-radius: 12px;
+      }
+      .button:hover {
+        background-color: #000;
+        color: white;
+      }
+      input[type=text] {
+        width: 75%;
+        padding: 18px 20px;
+        margin: 8px 8px;
+        box-sizing: border-box;
+        background-color: white;
+        border: 3px solid #000;
+        border-radius: 5px;
+        padding-left: 55px;
+        font-size:24px;
+        font-family: "Comic Sans MS", cursive, sans-serif;
+        background-repeat: no-repeat;
+      }
+      input[type=text]:focus {
+        border: 5px solid #000;
+      }
+    </style>
+    <script type="text/javascript" src="others/js/main.js"></script>
+  </head>
+  <body>
+    <div class=" center">
+      <table >
+        <tr>
+          <td><input id="Q03_1" class="folder" type="text" placeholder="VBS Folder path"/> </td>
+        </tr>
+        <tr >
+          <td><input type="button" name="submit" value="Execute" class="button" onclick="ExecuteVBSFile('Q03')"></td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

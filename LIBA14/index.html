@@ -4,7 +4,8 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=9">
-	<link href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACMUgKGjFICtYxSAhIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAjFICxoxTAP+MUgDOjFICEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAjFICDI1TAe6MUwTFjFIA0oxTAN+MUgIZAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIxSAU2NUwD3hEhsmIFFiYCMUgjajVMA6IxSAioAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACMUgCQjVMA8IBEnK95PO35gUaNuIxSCdWNUwDujFICOgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAi1EAzIpQGeJ9QbnEej7e/3o+4f+ARZTDi1IM0o1TAPKJTwBaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAjVMHBo1TANGHTEC4e0DQ43o+2f97P9P/ez/f/31CqNeESSbUiE8A44xSA0EAAAAAAAAAAAAAAAAAAAAAAAAAAMCHSjDBiTq5ml+AgXg72fV6PtX/ez/R/3Y62f90Oe7cn2WAa7iANNu9hUaEAAAAAAAAAAAAAAAAAAAAAAAAAADZoWiA26Nq9Zxhs6t1Odr7ez/S/3Y62f6ARMursHeOotWdaO3ZoWuv2aFwJgAAAAAAAAAAAAAAAAAAAAAAAAAA159fusuTbe+ITMLGcjbd/3Y62O+TWLWOyY9y0NigXuXVnWJu05pnCAAAAAAAAAAAAAAAAAAAAAAAAAAA0pplEtihXeO7gYLhdDjaznxB0detc5Og05tj6daeYbXTm2QUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANKaZTHYoF73s3mLr41SvG7Ah3zR2qJb39ScY2EAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADSmmVd05tk/syTbdXQmGfV2aJcr9KaZQwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA0pplrdKaZf/UnGLQ1Z1iUgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANKaZavSmmWP0pplDgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAPn/AAD4/wAA+H8AAPg/AADwHwAA8A8AAPAHAADwEwAA4AcAAOAfAADgPwAA5P8AAOH/AADH/wAAz/8AAA==" rel="icon" type="image/x-icon" />
+	<link rel="icon" href="others\img\favicon.ico" type="image/x-icon"/>
+	<link rel="shortcut icon" href="others\img\favicon.ico" type="image/x-icon"/>
 	<title>LIBA14 VB scripting</title>
 
 
@@ -34,7 +35,6 @@
 	</script>
 	<script type="text/vbscript" src="vbs/Q01.vbs"></script>
 	<script type="text/vbscript" src="vbs/Q02.vbs"></script>
-	<script type="text/vbscript" src="vbs/Q03.vbs"></script>
 	<script type="text/vbscript" src="vbs/Q04.vbs"></script>
 	<script type="text/vbscript" src="vbs/Q05.vbs"></script>
 	<script type="text/vbscript" src="vbs/Q06.vbs"></script>
@@ -114,10 +114,10 @@
 			
 			<table>
 				<tr>
-					<td><input id="Q06_1" class="file" type="text" name="Q06" placeholder="MS Access File path" /> </td>
+					<td><input id="Q06_1" class="file" type="text" placeholder="MS Access File path" /> </td>
 				</tr>
 				<tr>
-					<td><input id="Q06_2" class="xls" type="text" name="Q06" placeholder="MS Excel File path" /> </td>
+					<td><input id="Q06_2" class="xls" type="text" placeholder="MS Excel File path" /> </td>
 				</tr>
 				<tr>
 					<td><input type="button" name="submit" value="Transfer" class="button" onclick="button06()"></td>
@@ -148,10 +148,10 @@
 		<div class="slide" id="slide3" data-anchor="slide3">
 			<table>
 				<tr>
-					<td><input id="Q13_1" class="xls" type="text" name="Q13" placeholder="MS Excel File path"/> </td>
+					<td><input id="Q13_1" class="xls" type="text" placeholder="MS Excel File path"/> </td>
 				</tr>
 				<tr>
-					<td><input id="Q13_2" class="xls" type="text" name="Q13" placeholder="MS Excel File path"/> </td>
+					<td><input id="Q13_2" class="xls" type="text" placeholder="MS Excel File path"/> </td>
 				</tr>
 				<tr>
 					<td><input type="button" name="submit" value="Sort" class="button" onclick="button13()"></td>
@@ -183,10 +183,10 @@
 			
 			<table>
 				<tr>
-					<td><input id="Q02_1" class="folder" type="text" name="Q02" placeholder="Folder path"/> </td>
+					<td><input id="Q02_1" class="folder" type="text" placeholder="Folder path"/> </td>
 				</tr>
 				<tr>
-					<td><input id="Q02_2" class="xls" type="text" name="Q02" placeholder="MS Excel File path"/> </td>
+					<td><input id="Q02_2" class="xls" type="text" placeholder="MS Excel File path"/> </td>
 				</tr>
 				<tr>
 					<td><input type="button" name="submit" value="Open" class="button" onclick="button02()"></td>
@@ -249,7 +249,7 @@
 			
 			<table>
 				<tr>
-					<td><input id="Q11_1" class="xls" type="text" name="Q11" placeholder="MS Excel File path"/> </td>
+					<td><input id="Q11_1" class="xls" type="text" placeholder="MS Excel File path"/> </td>
 				</tr>
 				<tr>
 					<td><input type="button" name="submit" value="Split" class="button" onclick="button11()"></td>
@@ -276,17 +276,6 @@
 				Using VBS, take a screen shot of each of the worksheets in Excel and paste in the same worksheet. Rename the sheets as screenshot1, screenshot2 and so on.
 			</p>
 		</div>
-
-		<div class="slide" id="slide3" data-anchor="slide3">
-			<table>
-				<tr>
-					<td><input id="Q03_1" class="xls" type="text" name="Q03" placeholder="MS Excel File path"/> </td>
-				</tr>
-				<tr>
-					<td><input type="button" name="submit" value="Take ScreenShot" class="button" onclick="button03()"></td>
-				</tr>
-			</table>
-		</div>
 	</div>
 	<div class="section" id="section7">
 		<div class="slide" id="slide1" data-anchor="slide1">
@@ -311,10 +300,10 @@
 		<div class="slide" id="slide3" data-anchor="slide3">
 			<table>
 				<tr>
-					<td><input id="Q15_1" class="folder" type="text" name="Q15" placeholder="Folder path which has the screenshots"/> </td>
+					<td><input id="Q15_1" class="folder" type="text" placeholder="Folder path which has the screenshots"/> </td>
 				</tr>
 				<tr>
-					<td><input id="Q15_2" class="xls" type="text" name="Q15" placeholder="MS Excel File path"/> </td>
+					<td><input id="Q15_2" class="xls" type="text" placeholder="MS Excel File path"/> </td>
 				</tr>
 				<tr>
 					<td><input type="button" name="submit" value="Sort" class="button" onclick="button15()"></td>
@@ -346,13 +335,13 @@
 			
 			<table>
 				<tr>
-					<td colspan="2"><input id="Q12_1" class="txt" type="text" name="Q12" placeholder="Text File path"/> </td>
+					<td colspan="2"><input id="Q12_1" class="txt" type="text" placeholder="Text File path"/> </td>
 				</tr>
 				<tr>
-					<td colspan="2"><input id="Q12_2" class="folder" type="text" name="Q12" placeholder="MS Excel Folder path"/> </td>
+					<td colspan="2"><input id="Q12_2" class="folder" type="text" placeholder="MS Excel Folder path"/> </td>
 				</tr>
 				<tr>
-					<td><input id="Q12_3" class="xls" type="text" name="Q12" placeholder="MS Excel File name"/> </td>
+					<td><input id="Q12_3" class="xls" type="text" placeholder="MS Excel File name"/> </td>
 					<td><input type="button" name="submit" value="Split" class="button" onclick="button12()"></td>
 				</tr>
 			</table>
@@ -382,7 +371,7 @@
 			
 			<table>
 				<tr>
-					<td><input id="Q08_1" class="xls" type="text" name="Q02" placeholder="MS Excel File path"/> </td>
+					<td><input id="Q08_1" class="xls" type="text" placeholder="MS Excel File path"/> </td>
 				</tr>
 				<tr>
 				<tr>
@@ -426,7 +415,7 @@
 			
 			<table>
 				<tr>
-					<td><input id="Q16_1" class="xls" type="text" name="Q16" placeholder="MS Excel File path"/> </td>
+					<td><input id="Q16_1" class="xls" type="text" placeholder="MS Excel File path"/> </td>
 				</tr>
 				<tr>
 					<td><input type="button" name="submit" value="Validate" class="button" onclick="button16()"></td>
@@ -458,11 +447,11 @@
 			
 			<table>
 				<tr>
-					<td><input id="Q10_1" class="file" type="text" name="Q10" placeholder="Sorting Order - (1/2)" /> </td>
-					<td><input id="Q10_2" class="file" type="text" name="Q10" placeholder="Column Number" /> </td>
+					<td><input id="Q10_1" class="file" type="text" placeholder="Sorting Order - (1/2)" /> </td>
+					<td><input id="Q10_2" class="file" type="text" placeholder="Column Number" /> </td>
 				</tr>
 				<tr>
-					<td colspan="2"><input id="Q10_3" class="xls" type="text" name="Q10" placeholder="MS Excel File path"/> </td>
+					<td colspan="2"><input id="Q10_3" class="xls" type="text" placeholder="MS Excel File path"/> </td>
 				</tr>
 				<tr>
 					<td colspan="2"><input type="button" name="submit" value="Sort" class="button" onclick="button10()"></td>
@@ -503,15 +492,15 @@
 			
 			<table>
 				<tr>
-					<td><input id="Q04_1" class="folder" type="text" name="Q04" placeholder="Text File path"/> </td>
-					<td><input id="Q04_2" class="txt" type="text" name="Q04" placeholder="Text File name"/> </td>
+					<td><input id="Q04_1" class="folder" type="text" placeholder="Text File path"/> </td>
+					<td><input id="Q04_2" class="txt" type="text" placeholder="Text File name"/> </td>
 				</tr>
 				<tr>
-					<td colspan="2"><input id="Q04_3" class="file" type="text" name="Q04" placeholder="No of files" /> </td>
+					<td colspan="2"><input id="Q04_3" class="file" type="text" placeholder="No of files" /> </td>
 				</tr>
 				<tr>
-					<td ><input id="Q04_4" class="folder" type="text" name="Q04" placeholder="MS Excel File path"/> </td>
-					<td ><input id="Q04_5" class="xls" type="text" name="Q04" placeholder="MS Excel File Name"/> </td>
+					<td ><input id="Q04_4" class="folder" type="text" placeholder="MS Excel File path"/> </td>
+					<td ><input id="Q04_5" class="xls" type="text" placeholder="MS Excel File Name"/> </td>
 				</tr>
 				<tr>
 					<td colspan="2"><input type="button" name="submit" value="Extract" class="button" onclick="button04()"></td>
@@ -543,10 +532,10 @@
 			
 			<table>
 				<tr>
-					<td><input id="Q07_1" class="xls" type="text" name="Q07" placeholder="MS Excel File path"/> </td>
+					<td><input id="Q07_1" class="xls" type="text" placeholder="MS Excel File path"/> </td>
 				</tr>
 				<tr>
-					<td><input id="Q07_2" class="xls" type="text" name="Q07" placeholder="MS Excel File path (without Extention)"/> </td>
+					<td><input id="Q07_2" class="xls" type="text" placeholder="MS Excel File path (without Extention)"/> </td>
 				</tr>
 				<tr>
 					<td><input type="button" name="submit" value="Merge" class="button" onclick="button07()"></td>
@@ -578,10 +567,10 @@
 			
 			<table>
 				<tr>
-					<td><input id="Q05_1" class="xml" type="text" name="Q05" placeholder="XML File path"/> </td>
+					<td><input id="Q05_1" class="xml" type="text" placeholder="XML File path"/> </td>
 				</tr>
 				<tr>
-					<td><input id="Q05_2" class="xls" type="text" name="Q05" placeholder="MS Excel File path"/> </td>
+					<td><input id="Q05_2" class="xls" type="text" placeholder="MS Excel File path"/> </td>
 				</tr>
 				<tr>
 					<td><input type="button" name="submit" value="Extract" class="button" onclick="button05()"></td>
@@ -626,10 +615,10 @@
 			
 			<table>
 				<tr>
-					<td><input id="Q01_1" class="txt" type="text" name="Q01" placeholder="Text File path"/> </td>
+					<td><input id="Q01_1" class="txt" type="text" placeholder="Text File path"/> </td>
 				</tr>
 				<tr>
-					<td><input id="Q01_2" class="xls" type="text" name="Q01" placeholder="MS Excel File path (Without Extension)"/> </td>
+					<td><input id="Q01_2" class="xls" type="text" placeholder="MS Excel File path (Without Extension)"/> </td>
 				</tr>
 				<tr>
 					<td><input type="button" name="submit" value="Proceed" class="button" onclick="button01()"></td>
@@ -661,11 +650,11 @@
 			
 			<table>
 				<tr>
-					<td colspan="2"><input id="Q14_1" class="xls" type="text" name="Q14" placeholder="MS Excel File path"/> </td>
+					<td colspan="2"><input id="Q14_1" class="xls" type="text" placeholder="MS Excel File path"/> </td>
 				</tr>
 				<tr>
-					<td><input id="Q14_2" class="file" type="text" name="Q14" placeholder="Name to Search with"/> </td>
-					<td><input type="button" name="submit" value="Merge" class="button" onclick="button14()"></td>
+					<td><input id="Q14_2" class="file" type="text" placeholder="Name to Search with"/> </td>
+					<td><input type="button" name="submit" value="Search" class="button" onclick="button14()"></td>
 				</tr>
 			</table>
 		</div>

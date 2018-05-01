@@ -18,7 +18,7 @@ Function button13()
 	Set objWorksheet2 = objWorkbook2.Worksheets(1)
 
 	for intRow  = 1 to rowCount1 step 1
-		CountryArray(introw -1) = objWorksheet1.Cells(intRow, 2).Value		
+		CountryArray(introw -1) = objWorksheet1.Cells(intRow, 1).Value		
 	next
 	
 	Dim UniqCountry : UniqCountry = uniq(CountryArray)
@@ -33,15 +33,13 @@ Function button13()
 	next
 
 	for intRow1 = 1 to rowCount1 step 1
-		
 		for intRow2 = 1 to NoOfCountries step 1
-			If objWorksheet1.Cells(intRow1, 2).Value = objWorksheet2.Cells(intRow2, 1).Value then
+			If objWorksheet1.Cells(intRow1, 1).Value = objWorksheet2.Cells(intRow2, 1).Value then
 				objWorksheet2.Cells(intRow2, 2).Value = objWorksheet2.Cells(intRow2, 2).Value + 1
 				temp = objWorksheet2.Cells(intRow2, 2).Value
-				objWorksheet2.Cells(intRow2, temp + 2).Value = objWorksheet1.Cells(intRow1, 1).Value 
+				objWorksheet2.Cells(intRow2, temp + 2).Value = objWorksheet1.Cells(intRow1, 2).Value 
 			End If
 		next
-
 	next
 
 	objWorkbook1.Save

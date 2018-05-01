@@ -15,7 +15,7 @@ Online VBScript Repo :)
 
 - [X] Q01 Team_15 - Swathi Manoharan, Nivedha Ramesh
 - [ ] ~~Q02 Team_03 - Thamilarasan Palani, Vishal Chacko~~
-- [ ] ~~Q03 Team_06 - Bala Subramaniam Arunachalam, Balajivenkateswaran Sundarajan~~
+- [ ] Q03 Team_06 - Bala Subramaniam Arunachalam, Balajivenkateswaran Sundarajan
 - [X] Q04 Team_12 - Jayadevi Durairajulu, Jagadish Kumar Muthalur Chandrasekar
 - [X] Q05 Team_14 - Munish Kumar Karthick Muni, Kumara Raja Subramani
 - [ ] ~~Q06 Team_01 - Nivedha Ganeshan, Christus Colman Vincent Paul Arokiadass~~

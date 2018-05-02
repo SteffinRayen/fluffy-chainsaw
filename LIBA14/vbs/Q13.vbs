@@ -1,7 +1,7 @@
-Function button13()
+'Function button13()
 
-	FilePath1 = document.getElementById("Q13_1").value
-	FilePath2 = document.getElementById("Q13_2").value
+	FilePath1 = "C:\Users\Steffin Rayen\Desktop\GIT_WORKSPACE\fluffy-chainsaw\LIBA14\files\Q13.xlsx" 'document.getElementById("Q13_1").value
+	FilePath2 = "C:\Users\Steffin Rayen\Desktop\GIT_WORKSPACE\fluffy-chainsaw\LIBA14\files\Q13A.xlsx" 'document.getElementById("Q13_2").value
 	
 	Set objExcel1 = CreateObject("Excel.Application")
 	objExcel1.Application.Visible = True
@@ -17,7 +17,7 @@ Function button13()
 	Set objWorkbook2 = objExcel2.Workbooks.Add()
 	Set objWorksheet2 = objWorkbook2.Worksheets(1)
 
-	for intRow  = 1 to rowCount1 step 1
+	for intRow  = 2 to rowCount1 step 1
 		CountryArray(introw -1) = objWorksheet1.Cells(intRow, 1).Value		
 	next
 	
@@ -32,7 +32,7 @@ Function button13()
 		count = count + 1
 	next
 
-	for intRow1 = 1 to rowCount1 step 1
+	for intRow1 = 2 to rowCount1 step 1
 		for intRow2 = 1 to NoOfCountries step 1
 			If objWorksheet1.Cells(intRow1, 1).Value = objWorksheet2.Cells(intRow2, 1).Value then
 				objWorksheet2.Cells(intRow2, 2).Value = objWorksheet2.Cells(intRow2, 2).Value + 1
@@ -42,14 +42,14 @@ Function button13()
 		next
 	next
 
-	objWorkbook1.Save
-	objExcel1.Quit
-	objWorkbook2.SaveAs FilePath2
-	objExcel2.Quit
+''	objWorkbook1.Save
+''	objExcel1.Quit
+''	objWorkbook2.SaveAs FilePath2
+''	objExcel2.Quit
 
 	MsgBox "Data sorted Successfully",vbInformation
 
-End Function
+'End Function
 
 Function uniq(array)
   Dim dicTemp : Set dicTemp = CreateObject("Scripting.Dictionary")

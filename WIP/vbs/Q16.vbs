@@ -5,6 +5,7 @@ Function button16()
 	Set objExcel = CreateObject("Excel.Application")
 	objExcel.Application.Visible = True
 	Set objWorkbook = objExcel.Workbooks.Open(excelPath)
+	Dim character(5)
 	
 	Set objWorksheet1 = objWorkbook.Worksheets(1)
 	Set objWorksheet2 = objWorkbook.Worksheets(2)
@@ -12,44 +13,44 @@ Function button16()
 
 	rowCount1 = objWorksheet1.UsedRange.Rows.Count
 	
+	For row = 2 to (rowCount1)
+
 	'Name
-	For row = 2 to (rowCount1-1)
+		tempWord = objWorksheet1.Cells(row,1).Value
 
-		word = objWorksheet1.Cells(row,1).Value
+		Set re = New RegExp
+		With re
+		  .Pattern    = "^[a-zA-Z\s]+$"
+		  .IgnoreCase = False
+		  .Global     = False
+		End With
 
-		if (Len(word)<=60 AND VarType(word)=8) then
+		' Test method returns TRUE if a match is found
+		If re.Test( tempWord ) AND Len(tempWord)<=60 Then
 			objworksheet3.cells(row,1).Value="pass"
-		else 
+		Else
 			objworksheet3.cells(row,1).Value="fail"
-		end if
-	Next
+		End If
 
 	'DOB
-	For row = 2 to (rowCount1-1)
+		tempWord = objWorksheet1.Cells(row,2).Value
 
-		word1 = objWorksheet1.Cells(row,2).Value
-
-		if (IsDate(word1)) then
+		if (IsDate(tempWord)) then
 			objworksheet3.cells(row,2).Value="pass"
 		else 
 			objworksheet3.cells(row,2).Value="fail"
 		end if
-	Next
 
-	'Address- one line consist of 30 characters. assuming four lines containing '120characters.
-	For row = 2 to (rowCount1-1)
+	'Address- one line consist of 30 characters. assuming four lines containing
+		tempWord = objWorksheet1.Cells(row,3).Value
 
-		word2 = objWorksheet1.Cells(row,3).Value
-
-		if (VarType(word2)=8 AND Len(word2)>120 ) then
+		if (UBound(Split(tempWord,Chr(10))) = 3 ) then
 			objworksheet3.cells(row,3).Value="pass"
 		else 
 			objworksheet3.cells(row,3).Value="fail"
 		end if
-	Next
 
 	'City
-	For row = 2 to (rowCount1)
 		For row1 = 1 to (objWorksheet2.UsedRange.Rows.Count)
 			if (objworksheet1.cells(row,4).Value = objworksheet2.cells(row1,1).Value) then
 				objworksheet3.cells(row,4).Value="pass"
@@ -58,24 +59,23 @@ Function button16()
 				objworksheet3.cells(row,4).Value="fail" 
 			end if
 		Next
-	Next
 
 	'Emp_ID
-	Dim words(5)
-	For row = 2 to (rowCount1-1)
-		word3 = objWorksheet1.Cells(row,5).Value
-		words(0)= Mid(word3,1,1) 
-		words(1)= Mid(word3,2,1)
-		words(2)= Mid(word3,3,1)
-		words(3)= Mid(word3,4,1)
-		words(4)= Mid(word3,5,1)
-		words(5)= Mid(word3,6,1)
-		if (Len(word3)=6 AND VarType(words(0))=8 AND IsNumeric(words(1)) AND IsNumeric(words(2)) AND IsNumeric(words(3)) AND IsNumeric(words(4)) AND IsNumeric(words(5)) ) then
+		tempWord = objWorksheet1.Cells(row,5).Value
+		character(0)= Mid(tempWord,1,1) 
+		character(1)= Mid(tempWord,2,1)
+		character(2)= Mid(tempWord,3,1)
+		character(3)= Mid(tempWord,4,1)
+		character(4)= Mid(tempWord,5,1)
+		character(5)= Mid(tempWord,6,1)
+		if (Len(tempWord)=6 AND VarType(character(0))=8 AND IsNumeric(character(1)) AND IsNumeric(character(2)) AND IsNumeric(character(3)) AND IsNumeric(character(4)) AND IsNumeric(character(5)) ) then
 			objworksheet3.cells(row,5).Value="pass"
 		else 
 			objworksheet3.cells(row,5).Value="fail"
 		end if
+
 	Next
+
 
 	objWorkbook.Save
 	objExcel.Quit	

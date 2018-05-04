@@ -1,9 +1,11 @@
 Function button08()
 
 	filePath = document.getElementById("Q08_1").value
+	fileName = document.getElementById("Q08_2").value
+	absoluteFilePath = filePath&"\"&fileName&".xlsx"
 	Set objExcel = CreateObject("Excel.Application")
 	objExcel.Application.Visible = True
-	Set objWorkbook = objExcel.Workbooks.Open(filePath)
+	Set objWorkbook = objExcel.Workbooks.Open(absoluteFilePath)
 
 	Set objWorksheet1 = objWorkbook.Worksheets(1)
 	Set objWorksheet2 = objWorkbook.Worksheets(2)

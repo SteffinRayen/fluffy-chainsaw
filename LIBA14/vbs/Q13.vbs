@@ -1,11 +1,16 @@
 Function button13()
 
 	FilePath1 = document.getElementById("Q13_1").value
-	FilePath2 = document.getElementById("Q13_2").value
-	
+	FileName1 = document.getElementById("Q13_2").value
+	absoluteFilePath1 = FilePath1&"\"&FileName1&".xlsx"
+
+	FilePath2 = document.getElementById("Q13_3").value
+	FileName2 = document.getElementById("Q13_4").value
+	absoluteFilePath2 = FilePath2&"\"&FileName2&".xlsx"
+
 	Set objExcel1 = CreateObject("Excel.Application")
 	objExcel1.Application.Visible = True
-	Set objWorkbook1 = objExcel1.Workbooks.Open(FilePath1)
+	Set objWorkbook1 = objExcel1.Workbooks.Open(absoluteFilePath1)
 	Set objWorksheet1 = objWorkbook1.Worksheets(1)
 	
 	rowCount1 = objExcel1.ActiveWorkbook.Sheets(1).UsedRange.Rows.count
@@ -41,7 +46,7 @@ Function button13()
 
 	objWorkbook1.Save
 	objExcel1.Quit
-	objWorkbook2.SaveAs FilePath2
+	objWorkbook2.SaveAs absoluteFilePath2
 	objExcel2.Quit
 
 	MsgBox "Data sorted Successfully",vbInformation

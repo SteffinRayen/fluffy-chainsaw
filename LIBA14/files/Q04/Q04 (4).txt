@@ -1,0 +1,8 @@
+Account Number: AAAAAAAA
+
+Customer details are as follows
+
+Customer Name: JKL
+
+Customer ID: 657567567
+

@@ -2,6 +2,8 @@ Function button11()
 
 	'Get File path from hml text input using ID
 	ExcelFilePath = document.getElementById("Q11_1").value
+	ExcelFileName = document.getElementById("Q11_2").value
+	absoluteFilePath = ExcelFilePath&"\"&ExcelFileName&".xlsx"
 	
 	'Create Excel Object
 	Set objExcel = CreateObject("Excel.Application")
@@ -10,7 +12,7 @@ Function button11()
 	objExcel.Application.Visible = True
 
 	'Load an existing Workbook in the Excel object
-	Set objWorkbook = objExcel.Workbooks.Open(ExcelFilePath)
+	Set objWorkbook = objExcel.Workbooks.Open(absoluteFilePath)
 
 	'Select the Worksheet to manipulate
 	Set objWorksheet = objWorkbook.Worksheets(1)

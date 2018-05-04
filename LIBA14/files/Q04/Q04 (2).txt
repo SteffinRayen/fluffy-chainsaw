@@ -1,0 +1,8 @@
+Account Number: YYYYYYYY
+
+Customer details are as follows
+
+Customer Name: EFG
+
+Customer ID: 435345345
+

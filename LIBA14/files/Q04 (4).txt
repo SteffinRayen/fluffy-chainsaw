@@ -1,8 +1,0 @@
-Account Number: XXXXXXX
-
-Customer details are as follows
-
-Customer Name: ABC
-
-Customer ID: 324234234
-

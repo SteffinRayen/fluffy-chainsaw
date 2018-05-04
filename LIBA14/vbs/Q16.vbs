@@ -1,10 +1,12 @@
 Function button16()
 
 	excelPath= document.getElementById("Q16_1").value
-	
+	excelName= document.getElementById("Q16_2").value
+	absolutePath = excelPath&"\"&excelName&".xlsx"
+
 	Set objExcel = CreateObject("Excel.Application")
 	objExcel.Application.Visible = True
-	Set objWorkbook = objExcel.Workbooks.Open(excelPath)
+	Set objWorkbook = objExcel.Workbooks.Open(absolutePath)
 	
 	Set objWorksheet1 = objWorkbook.Worksheets(1)
 	Set objWorksheet2 = objWorkbook.Worksheets(2)

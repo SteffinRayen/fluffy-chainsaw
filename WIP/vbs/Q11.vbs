@@ -7,7 +7,7 @@ Function button11()
 	Set objWorkbook = objExcel.Workbooks.Open(ExcelFilePath)
 	Set objWorksheet = objWorkbook.Worksheets(1)
 	
-	rowCount = objExcel.ActiveWorkbook.Sheets(1).UsedRange.Rows.count
+	Set rowCount = objExcel.ActiveWorkbook.Sheets(1).UsedRange.Rows.count
 	
 	for intRow  = 1 to rowCount step 1
 		strCellValue = Split(objExcel.Cells(introw, 1).Value)
@@ -18,13 +18,15 @@ Function button11()
 				.Pattern = "\W" 
 				word = .Replace(word, "") 
 			End With
-			objWorksheet.Cells(intRow, count).Value = word &" "& instrrev(word,right(word,1))
+			objWorksheet.Cells(intRow, count).Value = word &" "& instrrev(word,"")
 			count = count + 1
 		next
 	next
 	
 	objWorkbook.Save
 	objExcel.Quit
+	
+	Set rowCount = Nothing
 	Set objWorksheet = Nothing
 	Set objWorkbook = Nothing
 	Set objExcel = Nothing

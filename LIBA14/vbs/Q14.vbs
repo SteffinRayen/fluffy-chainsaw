@@ -1,8 +1,8 @@
 Function button14()
 	Dim objExcel, strExcelPath, objSheet1,objSheet2,objSheet3,companyname,totalrows,totalrows1,Name,tr,count
 	
-	strExcelPath = document.getElementById("Q14_1").value'
-	strExcelName = document.getElementById("Q14_2").value'
+	strExcelPath = document.getElementById("Q14_1").value
+	strExcelName = document.getElementById("Q14_2").value
 	absolutePath = strExcelPath&"\"&strExcelName&".xlsx"
 	' Open specified spreadsheet and select the first worksheet.
 	Set objExcel = CreateObject("Excel.Application")

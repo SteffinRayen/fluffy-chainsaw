@@ -29,9 +29,11 @@ Function button13()
 	Dim UniqCountry : UniqCountry = uniq(CountryArray)
 	NoOfCountries = uBound (UniqCountry) + 1
 	
+	count = 1
 	for each word in UniqCountry
 		objWorksheet2.Cells(count, 1).Value = word
 		objWorksheet2.Cells(count, 2).Value = 0
+		count = count + 1
 	next
 
 	for intRow1 = 1 to rowCount1 step 1
